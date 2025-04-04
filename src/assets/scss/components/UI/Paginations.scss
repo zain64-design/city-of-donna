@@ -1,0 +1,61 @@
+@use '../../utils' as *;
+
+.pagination-wrap {
+    margin-top: 40px;
+    &>span {
+        font-family: $font-1;
+        font-size: 14px;
+        line-height: normal;
+        text-transform: capitalize;
+        color: $grey-clr;
+    }
+    .pagination {
+        gap: 13.75px;
+            .page-item {
+                .page-link {
+                    border-radius: 5.5px;
+                    background: transparent;
+                    border-color: $grey-clr;
+                    width: 28px;
+                    height: 28px;
+                    padding: 2px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    font-family: $font-1;
+                    font-size: 14px;
+                    font-weight: 400;
+                    line-height: normal;
+                    text-transform: capitalize;
+                    color: $grey-clr;
+                    &:hover {
+                        background: $prim-bg-2;
+                        color: $white-clr;
+                        border-color: $prim-bg-2;
+                    }
+                    &:focus {
+                        outline: none;
+                        box-shadow: none;
+                    }
+                    &>span {
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        font-size: 24px;
+                    }
+                }
+                &:last-child {
+                    .page-link {
+                        border: none;
+                    }
+                }
+                &.active {
+                    .page-link {
+                        background: $prim-bg-2;
+                        color: $white-clr;
+                        border-color: $prim-bg-2;
+                    }
+                }
+            }
+    }
+}

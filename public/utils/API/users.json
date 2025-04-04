@@ -1,0 +1,112 @@
+{
+    "users": [
+        {
+            "id": 1,
+            "img": "/images/users/u1.png",
+            "name": "Brooklyn Simmons",
+            "contactNumber": "(907) 555-0101",
+            "email": "debbie.baker@example.com",
+            "dateOfBirth": "09/05/1997",
+            "role": "User"
+        },
+        {
+            "id": 2,
+            "img": "/images/users/u2.png",
+            "name": "Savannah Nguyen",
+            "contactNumber": "(907) 555-0101",
+            "email": "tanya.hill@example.com",
+            "dateOfBirth": "09/05/1997",
+            "role": "Officer"
+        },
+        {
+            "id": 3,
+            "img": "/images/users/u3.png",
+            "name": "Jerome Bell",
+            "contactNumber": "(907) 555-0101",
+            "email": "alma.lawson@example.com",
+            "dateOfBirth": "09/05/1997",
+            "role": "User"
+        },
+        {
+            "id": 4,
+            "img": "/images/users/u4.png",
+            "name": "Robert Fox",
+            "contactNumber": "(907) 555-0101",
+            "email": "bill.sanders@example.com",
+            "dateOfBirth": "09/05/1997",
+            "role": "Officer"
+        },
+        {
+            "id": 5,
+            "img": "/images/users/u5.png",
+            "name": "Ralph Edwards",
+            "contactNumber": "(907) 555-0101",
+            "email": "sara.cruz@example.com",
+            "dateOfBirth": "09/05/1997",
+            "role": "User"
+        },
+        {
+            "id": 6,
+            "img": "/images/users/u6.png",
+            "name": "Leslie Alexander",
+            "contactNumber": "(907) 555-0101",
+            "email": "curtis.weaver@example.com",
+            "dateOfBirth": "09/05/1997",
+            "role": "Officer"
+        },
+        {
+            "id": 7,
+            "img": "/images/users/u7.png",
+            "name": "Albert Flores",
+            "contactNumber": "(907) 555-0101",
+            "email": "jessica.hanson@example.com",
+            "dateOfBirth": "09/05/1997",
+            "role": "User"
+        },
+        {
+            "id": 8,
+            "img": "/images/users/u8.png",
+            "name": "Ronald Richards",
+            "contactNumber": "(907) 555-0101",
+            "email": "jackson.graham@example.com",
+            "dateOfBirth": "09/05/1997",
+            "role": "Officer"
+        },
+        {
+            "id": 9,
+            "img": "/images/users/u9.png",
+            "name": "Eleanor Pena",
+            "contactNumber": "(907) 555-0101",
+            "email": "dolor.chambers@example.com",
+            "dateOfBirth": "09/05/1997",
+            "role": "User"
+        },
+        {
+            "id": 10,
+            "img": "/images/users/u10.png",
+            "name": "Wade Warren",
+            "contactNumber": "(907) 555-0101",
+            "email": "tim.jennings@example.com",
+            "dateOfBirth": "09/05/1997",
+            "role": "Officer"
+        },
+        {
+            "id": 11,
+            "img": "/images/users/u11.png",
+            "name": "Devon Lane",
+            "contactNumber": "(907) 555-0101",
+            "email": "michael.mitc@example.com",
+            "dateOfBirth": "09/05/1997",
+            "role": "User"
+        },
+        {
+            "id": 12,
+            "img": "/images/users/u12.png",
+            "name": "Jenny Wilson",
+            "contactNumber": "(907) 555-0101",
+            "email": "felicia.reid@example.com",
+            "dateOfBirth": "09/05/1997",
+            "role": "Officer"
+        }
+    ]
+}

@@ -1,0 +1,53 @@
+@use '../../utils' as *;
+
+.search-area {
+    margin-bottom: 36px;
+    .ct-flex-main {
+        @include flex(center, center, row, nowrap, 11px);
+        .btn-search {
+            @include solidBtn($font-2,500,16px,52px,100%,10px,204px);
+        }
+        .ct-flex-area {
+            @include ctFlex(center,center);
+            background: $white-bg;
+            border-radius: 6px;
+            padding: 0 4px 0 17px;
+            width: 100%;
+            padding: 0 16px;
+            border-radius: 6px;
+            .btn-icon-search {
+                padding: 0;
+            }
+            .search-inp {
+                height: 52px;
+                border: none;
+                border-radius: 0;
+                font-family: $font-4;
+                font-weight: 400;
+                font-size: 16px;
+                color: $black-clr-4;
+                padding: 0 16px;
+                &::-webkit-input-placeholder {
+                    color: $black-clr-7;
+                }
+        
+                &::-moz-placeholder {
+                    color: $black-clr-7;
+                }
+        
+                &:-ms-input-placeholder {
+                    color: $black-clr-7;
+                }
+        
+                &:-moz-placeholder {
+                    color: $black-clr-7;
+                }
+        
+                &:focus {
+                    background-color: $white-bg;
+                    color: $black-clr-4;
+                }
+            }
+        }
+    }
+}

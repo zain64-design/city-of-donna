@@ -1,0 +1,20 @@
+@use '../../utils' as *;
+
+.sec-auth-area {
+    background: url(/images/auth-bg.png) center/cover no-repeat;
+    min-height: 100vh;
+    padding: 50px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .sign-box {
+        padding: 60px 40px 40px;
+        border-radius: 24px;
+        border: none;
+        .logo {
+            height: 100px;
+            object-fit: contain;
+            object-position: center;
+        }
+    }
+}

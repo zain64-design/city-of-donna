@@ -1,0 +1,74 @@
+@use '../../utils' as *;
+
+.table-box {
+    .ct-table {
+        margin-bottom: 0;
+        thead {
+            tr {
+                th {
+                    color: $black-clr-3;
+                    font-size: 14px;
+                }
+            }
+        }
+        tbody {
+            tr {
+                &:first-child>td {
+                    padding-top: 20px;
+                }
+                td {
+                    color: $black-clr-3;
+                    font-size: 14px;
+                    .user-check {
+                        padding-left: 40px;
+                        .user-inp {
+                            margin-left: -2.5em;
+                            height: 18px;
+                            width: 18px;
+                            border: 1px solid $grey-clr-4;
+                            &:checked {
+                                background-color: $prim-bg;
+                                border-color: $prim-clr;
+                            }
+                        }
+                        .user-lbl {
+                            .user-thumb {
+                                height: 22px;
+                                width: 22px;
+                                object-fit: cover;
+                                object-position: center;
+                            }
+                            @include ctFlex(center,start);
+                            gap: 18px;
+                        }
+                    }
+                    .dlt-btn {
+                        transition: all 0.3s ease-in-out;
+                        padding: 0;
+                        border: none;
+                        border-radius: 0;
+                        &>svg {
+                            &>path {
+                                transition: all 0.3s ease-in-out;
+                            }
+                        }
+                        &:hover {
+                            // border-color: $prim-clr;
+                            // background-color: $prim-bg;
+                            &>svg {
+                                &>path {
+                                    fill: $prim-clr;
+                                }
+                            }
+                        }
+                    }
+                    a {
+                        color: $prim-clr;
+                        text-decoration: underline;
+                        font-weight: 500;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,161 @@
+@use './variables.scss' as *;
+@use './fonts.scss' as *;
+
+@mixin ctHead($font-weight,$font-size,$color,$text-transform) {
+    font-family: $font-1;
+    font-weight: $font-weight;
+    font-size: $font-size;
+    color: $color;
+    text-transform: $text-transform;
+}
+
+@mixin ctPara($font-weight,$font-size,$color) {
+    font-family: $font-1;
+    font-weight: $font-weight;
+    font-size: $font-size;
+    color: $color;
+}
+
+@mixin ctFormInp($height,$background-color,$color,$font-family,$font-size,$padding) {
+    height: $height;
+    width: 100%;
+    border-radius: 8px;
+    border: none;
+    background-color: $background-color;
+    color: $color;
+    font-family: $font-family;
+    font-weight: 400;
+    font-size: $font-size;
+    padding: $padding;
+}
+
+@mixin formXlHead() {
+    font-family: $font-2;
+    font-weight: 700;
+    font-size: 36px;
+    color: $prim-clr;
+    text-transform: capitalize;
+    letter-spacing: -0.1px;
+}
+@mixin formText($font-weight,$font-size,$color,$letter-spacing) {
+    font-family: $font-2;
+    font-weight: $font-weight;
+    font-size: $font-size;
+    color: $color;
+    letter-spacing: $letter-spacing;
+}
+
+@mixin formInpAuth() {
+    height: 62px;
+    width: 100%;
+    border-radius: 8px;
+    border: none;
+    background-color: $white-bg-3;
+    color: $black-clr;
+    font-family: $font-2;
+    font-weight: 400;
+    font-size: 16px;
+    padding: 0 24px;
+    letter-spacing: 0.128px;
+    align-content: center;
+}
+
+@mixin solidBtn($font-family,$font-weight,$font-size,$height,$width,$border-radius,$max-width) {
+    font-family: $font-family;
+    font-weight: $font-weight;
+    font-size: $font-size;
+    height: $height;
+    width: $width;
+    border-radius: $border-radius;
+    border: 1px solid $prim-clr;
+    max-width: $max-width;
+    color: $white-clr;
+    padding: 6px;
+    background: $prim-bg;
+    background-size: 100%;
+    text-transform: capitalize;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all .5s ease-in-out;
+    &:hover {
+        background-color: $white-bg;
+        color: $prim-clr;
+    }
+}
+
+@mixin flex ($align-items,$justify-content,$flex-direction,$flex-wrap,$gap) {
+    display: flex;
+    align-items: $align-items;
+    justify-content: $justify-content;
+    flex-direction: $flex-direction;
+    flex-wrap: $flex-wrap;
+    gap:$gap;
+}
+
+@mixin ctFlex ($align-items,$justify-content) {
+    display: flex;
+    align-items: $align-items;
+    justify-content: $justify-content;
+}
+
+@mixin respond-to($breakpoint) {
+    @if $breakpoint == 'infinite-two' {
+        @media only screen and (min-width: $breakpoint-infinite-two) {
+            @content;
+        }
+    }
+    @if $breakpoint == 'infinite' {
+        @media only screen and (min-width: $breakpoint-infinite) {
+            @content;
+        }
+    }
+
+    @if $breakpoint == 'four-xxl' {
+        @media only screen and (min-width: $breakpoint-four-xxl) and (max-width: $breakpoint-infinite) {
+            @content;
+        }
+    }
+
+    @else if $breakpoint == 'two-xxl' {
+        @media only screen and (min-width: $breakpoint-two-xxl) and (max-width: 1599px) {
+            @content;
+        }
+    }
+
+    @else if $breakpoint == 'xxl' {
+        @media only screen and (min-width: $breakpoint-xxl) and (max-width: 1444px) {
+            @content;
+        }
+    }
+
+    @else if $breakpoint == 'xl' {
+        @media only screen and (min-width: $breakpoint-xl) and (max-width: 1399px) {
+            @content;
+        }
+    }
+
+    @else if $breakpoint == 'lg' {
+        @media only screen and (min-width: $breakpoint-lg) and (max-width: 1199px) {
+            @content;
+        }
+    }
+
+    @else if $breakpoint == 'md' {
+        @media only screen and (min-width: $breakpoint-md) and (max-width: 991px) {
+            @content;
+        }
+    }
+
+    @else if $breakpoint == 'sm' {
+        @media only screen and (min-width: $breakpoint-sm) and (max-width: 767px) {
+            @content;
+        }
+    }
+
+    @else if $breakpoint == 'tiny' {
+        @media only screen and (min-width: $breakpoint-tiny) and (max-width: 575px) {
+            @content;
+        }
+    }
+}

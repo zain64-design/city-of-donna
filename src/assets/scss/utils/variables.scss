@@ -1,0 +1,53 @@
+$prim-clr: #9F0C0C;
+$prim-clr-2: #9A0000;
+
+$prim-bg: #9F0C0C;
+$prim-bg-2: #9A0000;
+$prim-bg-lt: rgba(159, 12, 12, 0.10);
+$prim-bg-lt-2: rgba(154, 0, 0, 0.10);
+$prim-bg-lt-3: #FFDFDF;
+
+$white-clr: #ffffff;
+$white-bg: #ffffff;
+$white-bg-2: #fdfafa;
+$white-bg-3: #faf3f3;
+
+$black-clr: #000000;
+$black-clr-2: #030303;
+$black-clr-3: #141516;
+$black-clr-4: #04091E;
+$black-clr-5: #181818;
+$black-clr-6: #1A1A1A;
+$black-clr-7: rgba(9, 9, 9, 0.5); 
+$black-bg: #000000;
+
+$grey-clr: #64748B;
+$grey-clr-2: #6C7278;
+$grey-clr-3: #747681;
+$grey-clr-4: #808080;
+
+$grey-bg: #64748B;
+$grey-bg-2: #6C7278;
+
+$border-clr: #64748B;
+
+$grad-clr-1: #01C5DB;
+$grad-clr-2: #1B5682;
+
+$gradient-bg: linear-gradient(91deg, $grad-clr-1 0.68%, $grad-clr-2 109.25%);
+
+$gradient-bg-2: linear-gradient(180deg, $grad-clr-1 0.68%, $grad-clr-2 109.25%);
+
+$border-clr: rgb(204 204 204 / 50%);
+
+
+$breakpoint-infinite-two: 2000px;
+$breakpoint-infinite: 1920px;
+$breakpoint-four-xxl: 1600px;
+$breakpoint-two-xxl: 1445px;
+$breakpoint-xxl: 1400px;
+$breakpoint-xl: 1200px;
+$breakpoint-lg: 992px;
+$breakpoint-md: 768px;
+$breakpoint-sm: 576px;
+$breakpoint-tiny: 200px;

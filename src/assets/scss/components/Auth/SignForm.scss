@@ -1,0 +1,86 @@
+@use '../../utils' as *;
+.login-form {
+    border-radius: 0;
+    border: none;
+    span {
+        display: block;
+        text-align: center;
+        margin-top: 20px;
+        @include formText(400,18px,$black-clr-6,-0.04px);
+        a {
+            text-decoration: underline;
+            @include formText(400,18px,$prim-clr,-0.04px);
+        }
+    }
+    .btn-toggle {
+        position: absolute;
+        right: 14px;
+        bottom: 40px;
+        border: none;
+        border-radius: 0;
+        padding: 0;
+        margin: 0;
+        font-size: 22px;
+        color: $grey-clr;
+        // &:active {
+        //     bor
+        // }
+    }
+    .btn-submit {
+        margin-top: 38px;
+        @include solidBtn($font-2,700,18px,56px,100%,8px,100%);
+    }
+    .inp-area {
+        position: relative;
+        padding-bottom: 24px;
+        .form-label {
+            margin-bottom: 16px;
+            @include formText(700,16px,$black-clr-5,0.128px)
+        }
+        .ct-inp {
+            @include formInpAuth();
+            &::-webkit-input-placeholder {
+                color: $grey-clr;
+                font-size: 16px;
+            }
+            &::-moz-placeholder {
+                color: $grey-clr;
+                font-size: 16px;
+            }
+            &:-ms-input-placeholder {
+                color: $grey-clr;
+                font-size: 16px;
+            }
+            &:-moz-placeholder {
+                color: $grey-clr;
+                font-size: 16px;
+            }
+            &[type='password'] {
+                font-family: $font-4;
+                &::-webkit-input-placeholder {
+                    font-family: $font-2;
+                }
+                &::-moz-placeholder {
+                    font-family: $font-2;
+                }
+                &:-ms-input-placeholder {
+                    font-family: $font-2;
+                }
+                &:-moz-placeholder {
+                    font-family: $font-2;
+                }
+            }
+        }
+    }
+    .form-head {
+        h6 {
+            text-align: center;
+            @include formXlHead();
+        }
+        p {
+            text-align: center;
+            margin: 16px 0 38px;
+            @include formText(400,16px,$grey-clr,-0.04px);
+        }
+    }
+}
