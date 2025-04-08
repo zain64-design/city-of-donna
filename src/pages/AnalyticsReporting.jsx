@@ -1,8 +1,10 @@
 import React from 'react'
+import useAOS from '../utils/hooks/useAOS';
 
 const AnalyticsReporting = () => {
+  useAOS();
   return (
-    <div>AnalyticsReporting</div>
+    <div data-aos="fade-in">AnalyticsReporting</div>
   )
 }
 

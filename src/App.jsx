@@ -13,6 +13,7 @@ import BackupRestore from './pages/BackupRestore';
 import AuthLayout from './components/Layout/AuthLayout';
 import SignIn from './pages/SignIn';
 import ActivityLog from './pages/ActivityLog';
+import LogDetails from './pages/LogDetails';
 
 function App() {
 
@@ -26,6 +27,7 @@ function App() {
               <Route path='/user-management'>
                 <Route index element={<UserManagement />} />
                 <Route path="/user-management/activity-log" element={<ActivityLog/>} />
+                <Route path="/user-management/activity-log/log-details" element={<LogDetails/>} />
               </Route>
               <Route path='/notification' element={<Notifications />} />
               <Route path='/technical-monitoring' element={<TechnicalMonitoring />} />

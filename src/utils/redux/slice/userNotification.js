@@ -1,43 +1,38 @@
 import { createAsyncThunk, createSlice } from "@reduxjs/toolkit";
-import { USERS_API } from "../../constant";
+import { CURRENT_NOTIFICATION_API } from "../../constant";
 import axios from "axios";
 
-const baseURL = USERS_API;
+const baseURL = CURRENT_NOTIFICATION_API;
 
-export const getUsers = createAsyncThunk('users/getUsers',async(_,thunkAPI)=> {
+export const getUserNotification = createAsyncThunk('users/getUserNotification',async(_,thunkAPI)=> {
     try {
         const response = await axios.get(baseURL);
-        // await new Promise(resolve => setTimeout(resolve, 2000));
-        // const simulateError = true;
-        // if (simulateError) {
-        //     throw new Error;
-        // }
-        return response.data.users;
+        return response.data.notification;
     } catch (error) {
         return thunkAPI.rejectWithValue('something went wrong')
     }
 })
 
-const userSlice = createSlice({
-    name: 'users',
+const userNotificationSlice = createSlice({
+    name: 'userNotification',
     initialState: {data:[],isLoading:false,error: ''},
     reducers: {},
 
     extraReducers:(builder)=> {
         builder
-        .addCase(getUsers.pending,(state)=> {
+        .addCase(getUserNotification.pending,(state)=> {
             state.isLoading = true;
             state.error = null;
         })
-        .addCase(getUsers.fulfilled,(state,action)=> {
+        .addCase(getUserNotification.fulfilled,(state,action)=> {
             state.isLoading = false;
             state.data = action.payload;
         })
-        .addCase(getUsers.rejected,(state,action)=> {
+        .addCase(getUserNotification.rejected,(state,action)=> {
             state.isLoading = false;
             state.error = action.payload;
         })
     }
 })
 
-export default userSlice.reducer;
+export default userNotificationSlice.reducer;

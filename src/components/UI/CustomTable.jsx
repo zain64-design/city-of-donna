@@ -1,16 +1,15 @@
 import React from 'react'
-import { Card, Table } from 'react-bootstrap';
-import '../../assets/scss/components/UI/Table.scss'
+import { Table } from 'react-bootstrap';
 
-const CustomTable = ({tbHeader=[],data=[],isLoading=false,error=false,renderRow}) => {
+const CustomTable = ({tbHeader=[],tbClass='',data=[],isLoading=false,error=false,renderRow}) => {
   return (
     <>
-<div className='table-box table-responsive'>
+<div className={`table-responsive ${tbClass}`}>
       <Table className='ct-table table-borderless align-middle'>
         <thead>
           <tr>
             {tbHeader.map((header, index) => (
-              <th key={index}>{header}</th>
+              <th key={index} colSpan={header.colspan && header.colspan }>{header.text}</th>
             ))}
           </tr>
         </thead>

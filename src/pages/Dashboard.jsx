@@ -1,8 +1,10 @@
 import React from 'react'
+import useAOS from '../utils/hooks/useAOS';
 
 const Dashboard = () => {
+  useAOS();
   return (
-    <div>Dashboard</div>
+    <div data-aos="fade-in">Dashboard</div>
   )
 }
 

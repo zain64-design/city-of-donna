@@ -2,7 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types';
 
 const Text = ({as: Tag = 'p', className='', children, ...props}) => {
-    return <Tag {...props}{...(className ? { className } : {})}>
+    return <Tag {...props}{...(className ? { className } : {} )}>
     {children}
   </Tag>;
 }

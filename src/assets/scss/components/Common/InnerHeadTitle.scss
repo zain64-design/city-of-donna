@@ -1,0 +1,7 @@
+@use '../../utils' as *;
+
+.inner-title {
+    h5 {
+        @include ctHead($font-3,600,24px,$black-clr,capitalize);
+    }
+}

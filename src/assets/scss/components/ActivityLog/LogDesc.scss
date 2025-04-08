@@ -1,0 +1,26 @@
+@use '../../utils' as *;
+
+.log-desc {
+    margin-top: 24px;
+    h5 {
+        @include ctHead($font-2,700,24px,$black-clr-8,capitalize);
+        margin-bottom: 16px;
+    }
+    h6 {
+        @include ctHead($font-2,700,16px,$black-clr-8,capitalize);
+        margin: 16px 0 5px;
+    }
+    ul {
+        @include flex(flex-start,flex-start,row,wrap,24px);
+        li {
+            @include flex(flex-start,flex-start,column,wrap,3px);
+            max-width: 33%;
+            &>span {
+                @include ctHead($font-2,600,16px,$black-clr,capitalize);
+            }
+            &>small {
+                @include ctParaTwo($font-2,600,16px,$grey-clr-5); 
+            }
+        }
+    }
+}

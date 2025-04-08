@@ -1,8 +1,10 @@
 import React from 'react'
+import useAOS from '../utils/hooks/useAOS';
 
 const FeedbackSupport = () => {
+  useAOS();
   return (
-    <div>FeedbackSupport</div>
+    <div data-aos="fade-in">FeedbackSupport</div>
   )
 }
 

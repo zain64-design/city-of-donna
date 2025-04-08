@@ -1,8 +1,8 @@
 @use './variables.scss' as *;
 @use './fonts.scss' as *;
 
-@mixin ctHead($font-weight,$font-size,$color,$text-transform) {
-    font-family: $font-1;
+@mixin ctHead($font-family,$font-weight,$font-size,$color,$text-transform) {
+    font-family: $font-family;
     font-weight: $font-weight;
     font-size: $font-size;
     color: $color;
@@ -11,6 +11,12 @@
 
 @mixin ctPara($font-weight,$font-size,$color) {
     font-family: $font-1;
+    font-weight: $font-weight;
+    font-size: $font-size;
+    color: $color;
+}
+@mixin ctParaTwo($font-family,$font-weight,$font-size,$color) {
+    font-family: $font-family;
     font-weight: $font-weight;
     font-size: $font-size;
     color: $color;
@@ -45,6 +51,14 @@
     letter-spacing: $letter-spacing;
 }
 
+@mixin formLbl($font-family,$font-weight,$font-size,$color,$letter-spacing) {
+    font-family: $font-family;
+    font-weight: $font-weight;
+    font-size: $font-size;
+    color: $color;
+    letter-spacing: $letter-spacing;
+}
+
 @mixin formInpAuth() {
     height: 62px;
     width: 100%;
@@ -58,6 +72,20 @@
     padding: 0 24px;
     letter-spacing: 0.128px;
     align-content: center;
+}
+
+@mixin ctFormInp($height,$border-radius,$background-color,$font-family,$font-size,$padding,$align-content) {
+    height: $height;
+    width: 100%;
+    border-radius: $border-radius;
+    border: none;
+    background-color: $background-color;
+    color: $black-clr;
+    font-family: $font-family;
+    font-weight: 400;
+    font-size: $font-size;
+    padding: $padding;
+    align-content: $align-content;
 }
 
 @mixin solidBtn($font-family,$font-weight,$font-size,$height,$width,$border-radius,$max-width) {
@@ -81,6 +109,7 @@
     &:hover {
         background-color: $white-bg;
         color: $prim-clr;
+        border-color: $prim-clr;
     }
 }
 

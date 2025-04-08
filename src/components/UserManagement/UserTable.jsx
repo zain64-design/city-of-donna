@@ -5,8 +5,7 @@ import { getUsers } from '../../utils/redux/slice/users';
 import Image from '../UI/Image'
 import { Link } from 'react-router';
 import CustomTable from '../UI/CustomTable';
-import Skeleton from 'react-loading-skeleton'
-import 'react-loading-skeleton/dist/skeleton.css'
+import '../../assets/scss/components/UI/Table.scss'
 
 const UserTable = () => {
 
@@ -17,7 +16,7 @@ const UserTable = () => {
         dispatch(getUsers());
     }, [dispatch]);
 
-    const tbHeader = ['User Name', 'Contact Number', 'Email', 'Date of Birth', 'Role', 'Activity Log', 'Action']
+    const tbHeader = [{text: 'User Name'}, {text: 'Contact Number'},{text: 'Email'},{text: 'Date of Birth'},{text: 'Role'}, {text: 'Activity Log'}, {text: 'Action'}];
 
     const renderRow = (value) => {
         const { id, img, name, contactNumber, email, dateOfBirth, role } = value;
@@ -56,7 +55,7 @@ const UserTable = () => {
     return (
         <>
             <Card className="gb-tb-card">
-            <CustomTable tbHeader={tbHeader} data={data} isLoading={isLoading} error={error} renderRow={renderRow} />
+            <CustomTable tbHeader={tbHeader} data={data} isLoading={isLoading} error={error} renderRow={renderRow} tbClass='user-table' />
             </Card>
         </>
     )

@@ -1,0 +1,94 @@
+@use '../../utils' as *;
+
+.not-card {
+    margin-top: 58px;
+    border: none !important;
+    border-radius: 16px !important;
+    padding: 0 0 20px;
+    margin-bottom: 80px;
+    &>h5 {
+        @include ctHead($font-3,600,24px,$black-clr,capitalize); 
+        padding: 17px 23px;
+    }
+    .not-table {
+        .ct-table {
+            margin-bottom: 0;
+            thead {
+                vertical-align:middle;
+                tr {
+                    th {
+                        background: $prim-bg-lt-4;
+                        color: $black-clr;
+                        font-size: 17px;
+                        font-weight: 700;
+                        padding: 16px 23px;
+                    }
+                }
+            }
+            tbody {
+                tr {
+                    // &:first-child>td {
+                    //     padding-top: 20px;
+                    // }
+                    &:not(:last-child) {
+                        border-bottom: 1px solid $grey-clr-6;
+                    }
+                    td {
+                        color: $black-clr;
+                        font-size: 17px;
+                        padding: 16px 23px;
+                        &:nth-child(3) {
+                            font-size: 16px;
+                        }
+                        .user-check {
+                            padding-left: 40px;
+                            .user-inp {
+                                margin-left: -2.5em;
+                                height: 18px;
+                                width: 18px;
+                                border: 1px solid $grey-clr-4;
+                                &:checked {
+                                    background-color: $prim-bg;
+                                    border-color: $prim-clr;
+                                }
+                            }
+                            .user-lbl {
+                                .user-thumb {
+                                    height: 22px;
+                                    width: 22px;
+                                    object-fit: cover;
+                                    object-position: center;
+                                }
+                                @include ctFlex(center,start);
+                                gap: 18px;
+                            }
+                        }
+                        .dlt-btn {
+                            transition: all 0.3s ease-in-out;
+                            padding: 0;
+                            border: none;
+                            border-radius: 0;
+                            &>svg {
+                                &>path {
+                                    transition: all 0.3s ease-in-out;
+                                }
+                            }
+                            &:hover {
+                                &>svg {
+                                    &>path {
+                                        fill: $prim-clr;
+                                    }
+                                }
+                            }
+                        }
+                        a {
+                            color: $prim-clr;
+                            text-decoration: underline;
+                            font-weight: 500;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

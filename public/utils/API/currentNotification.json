@@ -1,0 +1,32 @@
+{
+    "notification": [
+        {
+            "id": 1,
+            "notificationTitle": "New Announcement",
+            "notificationType": "Push Notification",
+            "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s",
+            "date": "Jan 30, 2025"
+        },
+        {
+            "id": 2,
+            "notificationTitle": "New Announcement",
+            "notificationType": "In-App Notification",
+            "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s",
+            "date": "Jan 30, 2025"
+        },
+        {
+            "id": 3,
+            "notificationTitle": "New Announcement",
+            "notificationType": "In-App Notification",
+            "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s",
+            "date": "Jan 30, 2025"
+        },
+        {
+            "id": 4,
+            "notificationTitle": "New Announcement",
+            "notificationType": "Push Notification",
+            "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s",
+            "date": "Jan 30, 2025"
+        }
+    ]
+}

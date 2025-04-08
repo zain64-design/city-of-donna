@@ -4,11 +4,13 @@ import '../assets/scss/components/Auth/SignIn.scss'
 import SignForm from '../components/Auth/SignForm'
 import logo from '/images/logo.png'
 import Image from '../components/UI/Image'
+import useAOS from '../utils/hooks/useAOS'
 
 const SignIn = () => {
+    useAOS();
     return (
         <>
-            <section className="sec-auth-area">
+            <section data-aos="fade-in" className="sec-auth-area">
                 <Container>
                     <Row className='justify-content-center'>
                         <Col xs={12} sm={12} md={12} lg={12} xl={10} xxl={10}>

@@ -1,0 +1,13 @@
+@use '../../utils' as *;
+
+.inner-banner {
+    @include flex(center,flex-start,row,wrap,16px);
+    .ct-arrow {
+        padding: 0;
+        border: none;
+        border-radius: 0;
+    }
+    &>.xl-head {
+        @include ctHead($font-2,700,24px,$black-clr,capitalize)
+    }
+}

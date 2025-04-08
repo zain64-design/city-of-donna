@@ -1,8 +1,10 @@
 import React from 'react'
+import useAOS from '../utils/hooks/useAOS';
 
 const BackupRestore = () => {
+  useAOS();
   return (
-    <div>BackupRestore</div>
+    <div data-aos="fade-in">BackupRestore</div>
   )
 }
 
