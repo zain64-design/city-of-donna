@@ -9,7 +9,7 @@ const Notifications = () => {
   return (
     <div data-aos="fade-in" className='notification-area'>
       <div className="container-ct">
-        <InnerHeadTitle innerTitle='Notifications Management'/>
+        <InnerHeadTitle innerTitle='Notifications Management' titleClass='fw-semibold'/>
         <NotificationForm/>
         <NotificationTable/>
       </div>

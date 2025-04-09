@@ -30,7 +30,7 @@
                     color: $grey-clr;
                     &:hover {
                         background: $prim-bg-2;
-                        color: $white-clr;
+                        color: $white-clr !important;
                         border-color: $prim-bg-2;
                     }
                     &:focus {

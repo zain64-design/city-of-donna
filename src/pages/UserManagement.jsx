@@ -1,7 +1,7 @@
 import React from 'react'
 import {Col, Row } from 'react-bootstrap'
 import UserTable from '../components/UserManagement/UserTable'
-import Paginations from '../components/UserManagement/Paginations'
+import Paginations from '../components/UI/Paginations'
 import UserSearchBar from '../components/UserManagement/UserSearchBar'
 import useAOS from '../utils/hooks/useAOS'
 

@@ -5,7 +5,7 @@ import ActivityLogTable from '../components/ActivityLog/ActivityLogTable'
 import Paginations from '../components/UI/Paginations'
 import useAOS from '../utils/hooks/useAOS'
 
-const ActivityLog = () => {
+const AddUser = () => {
 
   useAOS();
 
@@ -28,4 +28,4 @@ const ActivityLog = () => {
   )
 }
 
-export default ActivityLog
+export default AddUser

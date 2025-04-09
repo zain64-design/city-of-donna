@@ -2,6 +2,31 @@
 
 .inner-title {
     h5 {
-        @include ctHead($font-3,600,24px,$black-clr,capitalize);
+        @include ctHead($font-3,700,24px,$black-clr,capitalize);
+    }
+    .btn-log {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 12px;
+        @include ctParaTwo($font-3,500,16px,$black-clr);
+        margin: 0 0 0 auto;
+        &:hover {
+            color: $prim-clr;
+            &>svg {
+                path {
+                    fill: $prim-clr;
+                }
+            }
+        }
+        &>svg {
+            path {
+                transition: all 0.2s ease-in-out;
+            }
+        }
+        &:focus {
+            outline: none;
+            border: none;
+        }
     }
 }

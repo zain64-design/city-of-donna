@@ -1,0 +1,54 @@
+@use '../../utils' as *;
+
+.backup-box {
+    border: none !important;
+    border-radius: 16px !important;
+    padding: 26px 30px 19px;
+    height: 100% !important;
+    .tp-area {
+        @include flex (center,flex-start,row,wrap,11px);
+        margin-bottom: 18px;
+        .icon {
+
+        }
+        &>h6 {
+            @include ctHead($font-2,600,16px,$black-clr-4,capitalize);
+        }
+    }
+    .desc {
+        .date-area {
+            &>h5 {
+            @include ctHead($font-2,700,24px,$black-clr-3,capitalize);
+            }
+            &>span {
+                @include ctParaTwo($font-2,500,18px,$grey-clr)
+            }
+        }
+        .ct-drp {
+            .ct-btn {
+                @include ctFormSelect(43px,8px,1px solid $grey-clr,$white-bg,$black-clr-3,$font-2,500,18px,8px 10px,center);
+                
+                &:after {
+                    display: none;
+                }
+            }
+            .dropdown-menu {
+                border: none;
+                margin-top: 10px;
+                border-radius: 6px;
+                padding: 10px 10px;
+                box-shadow: 0px 0px 10px 1px $grey-clr-6;
+                .dropdown-item {
+                    border-radius: 5px;
+                    &.active {
+                        background-color: $prim-bg;
+                    }
+                    &:hover {
+                        background-color: $white-bg;
+                        color: $prim-clr;
+                    }
+                }
+            }
+        }
+    }
+}

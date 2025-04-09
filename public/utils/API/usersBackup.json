@@ -1,0 +1,60 @@
+{
+    "userBackup": [
+        {
+            "id": 1,
+            "backupId": 10234,
+            "date": "Jan 30, 2025",
+            "time": "5:00 PM",
+            "size": "5 GB",
+            "type": "Automatic"
+        },
+        {
+            "id": 2,
+            "backupId": 10234,
+            "date": "Jan 30, 2025",
+            "time": "4:00 PM",
+            "size": "5 GB",
+            "type": "Manual"
+        },
+        {
+            "id": 3,
+            "backupId": 10234,
+            "date": "Jan 30, 2025",
+            "time": "3:00 PM",
+            "size": "5 GB",
+            "type": "Automatic"
+        },
+        {
+            "id": 4,
+            "backupId": 10234,
+            "date": "Jan 29, 2025",
+            "time": "2:00 PM",
+            "size": "5 GB",
+            "type": "Automatic"
+        },
+        {
+            "id": 5,
+            "backupId": 10234,
+            "date": "Jan 28, 2025",
+            "time": "1:00 PM",
+            "size": "6.2 GB",
+            "type": "Manual"
+        },
+        {
+            "id": 6,
+            "backupId": 10234,
+            "date": "Jan 27, 2025",
+            "time": "12:00 PM",
+            "size": "5 GB",
+            "type": "Automatic"
+        },
+        {
+            "id": 7,
+            "backupId": 10234,
+            "date": "Jan 26, 2025",
+            "time": "11:00 PM",
+            "size": "5 GB",
+            "type": "Manual"
+        }
+    ]
+}

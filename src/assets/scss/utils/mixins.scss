@@ -88,6 +88,20 @@
     align-content: $align-content;
 }
 
+@mixin ctFormSelect($height,$border-radius,$border,$background-color,$color,$font-family,$font-weight,$font-size,$padding,$align-content) {
+    height: $height;
+    width: 100%;
+    border-radius: $border-radius;
+    border: $border;
+    background-color: $background-color;
+    color: $color;
+    font-family: $font-family;
+    font-weight: 400;
+    font-size: $font-size;
+    padding: $padding;
+    align-content: $align-content;
+}
+
 @mixin solidBtn($font-family,$font-weight,$font-size,$height,$width,$border-radius,$max-width) {
     font-family: $font-family;
     font-weight: $font-weight;

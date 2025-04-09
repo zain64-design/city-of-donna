@@ -1,7 +1,7 @@
 import React from 'react'
 import { Form } from 'react-bootstrap'
 import '../../assets/scss/components/UI/SearchBar.scss'
-import CtButton from '../UI/CTButton'
+import CTButton from '../UI/CTButton'
 
 const UserSearchBar = () => {
 
@@ -19,10 +19,10 @@ const UserSearchBar = () => {
             <Form className="search-area">
                 <Form.Group className='ct-flex-main'>
                     <Form.Group className='ct-flex-area'>
-                        <CtButton type="search" variant='icon-search' showIcon={true} icon={<IconSearch />} />
+                        <CTButton type="search" variant='icon-search' showIcon={true} icon={<IconSearch />} />
                         <Form.Control type="search" className='search-inp' placeholder="Search Users" />
                     </Form.Group>
-                    <CtButton type="search" variant='search' label='search' />
+                    <CTButton type="search" variant='search' label='search' />
                 </Form.Group>
             </Form>
         </>

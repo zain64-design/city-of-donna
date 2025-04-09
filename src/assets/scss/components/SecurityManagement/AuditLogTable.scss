@@ -1,0 +1,125 @@
+@use '../../utils' as *;
+
+.audit-tb-card {
+    padding: 30px 20px;
+    border: none !important;
+    border-radius: 16px !important;
+    margin-top: 40px;
+    .pagination-wrap {
+        &>span {
+            font-size: 18px;
+            color: $prim-clr-2;
+        }
+        .pagination {
+            .page-item {
+                .page-link {
+                    height: 30px;
+                    width: 30px;
+                    font-size: 18px;
+                    border-color: $prim-clr-2;
+                    color: $prim-clr-2;
+                }
+                &.active {
+                    .page-link {
+                        color: $white-clr;
+                    }
+                }
+            }
+        }
+    }
+    .audit-table {
+        .ct-table {
+            margin-bottom: 0;
+            thead {
+                tr {
+                    th {
+                        color: $black-clr-3;
+                        font-size: 14px;
+                    }
+                }
+            }
+            tbody {
+                tr {
+                    td {
+                        color: $black-clr-3;
+                        font-size: 14px;
+                        padding-top: 20px;
+                        .user-check {
+                            padding-left: 40px;
+                            .user-inp {
+                                margin-left: -2.5em;
+                                height: 18px;
+                                width: 18px;
+                                border: 1px solid $grey-clr-4;
+                                &:checked {
+                                    background-color: $prim-bg;
+                                    border-color: $prim-clr;
+                                }
+                            }
+                            .user-lbl {
+                                .user-thumb {
+                                    height: 22px;
+                                    width: 22px;
+                                    object-fit: cover;
+                                    object-position: center;
+                                }
+                                @include ctFlex(center,start);
+                                gap: 18px;
+                            }
+                        }
+                        .act-btn {
+                            transition: all 0.3s ease-in-out;
+                            padding: 0;
+                            border: none;
+                            border-radius: 0;
+                            &>svg {
+                                &>path {
+                                    transition: all 0.3s ease-in-out;
+                                }
+                            }
+                            &:hover {
+                                // border-color: $prim-clr;
+                                // background-color: $prim-bg;
+                                &>svg {
+                                    &>path {
+                                        fill: $prim-clr;
+                                    }
+                                    &>g {
+                                        &>path {
+                                            fill: $prim-clr;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                        a {
+                            color: $prim-clr;
+                            text-decoration: underline;
+                            font-weight: 500;
+                        }
+                        .form-switch {
+                            .form-check-input {
+                                height: 19px;
+                                width: 37px;
+                                border: none;
+                                background-image: url(/images/icons/Ellipse-lt.svg);
+                                background-size: 15px;
+                                &:checked {
+                                    background-color: $prim-bg-lt-3;
+                                    background-image: url(/images/icons/Ellipse-dk.svg);
+                                    background-position: calc(100% - 1px) center;
+                                }
+                            }
+                        }
+                        &.txt-green {
+                            color: $green-clr;
+                        }
+                        &.txt-red {
+                            color: $prim-clr-2;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

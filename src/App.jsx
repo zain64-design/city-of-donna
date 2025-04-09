@@ -14,6 +14,7 @@ import AuthLayout from './components/Layout/AuthLayout';
 import SignIn from './pages/SignIn';
 import ActivityLog from './pages/ActivityLog';
 import LogDetails from './pages/LogDetails';
+import AuditLog from './pages/AuditLog';
 
 function App() {
 
@@ -33,7 +34,11 @@ function App() {
               <Route path='/technical-monitoring' element={<TechnicalMonitoring />} />
               <Route path='/analytics-reporting' element={<AnalyticsReporting />} />
               <Route path='/feedback-support' element={<FeedbackSupport />} />
-              <Route path='/security-management' element={<SecurityManagement />} />
+              <Route path='/security-management'>
+                <Route index element={<SecurityManagement />}/>
+                <Route path='/security-management/add-user' element={<AuditLog/>}/>
+                <Route path='/security-management/audit-log' element={<AuditLog/>}/>
+              </Route>
               <Route path='/backup-restore' element={<BackupRestore />} />
             </Route>
             <Route element={<AuthLayout/>}>

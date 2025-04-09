@@ -1,0 +1,12 @@
+@use '../../utils' as *;
+
+.inner-btn-title {
+    @include flex (center,space-between,row,wrap,10px);
+    padding: 0 10px;
+    &>h5 {
+        @include ctHead($font-3,700,24px,$black-clr,capitalize);
+    }
+    .btn-title {
+        @include solidBtn($font-2,500,16px,52px,185px,10px,100%)
+    }
+}

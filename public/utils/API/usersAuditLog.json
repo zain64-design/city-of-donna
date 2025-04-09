@@ -1,0 +1,112 @@
+{
+    "auditLogs": [
+        {
+            "id": 1,
+            "date": "Jan 30, 2025",
+            "time": "5:00 PM",
+            "user": "Brooklyn Simmons",
+            "action": "Login",
+            "details": "Successful Login",
+            "status": "Success"
+        },
+        {
+            "id": 2,
+            "date": "Jan 30, 2025",
+            "time": "4:00 PM",
+            "user": "Savannah Nguyen",
+            "action": "Create User",
+            "details": "User Management",
+            "status": "Success"
+        },
+        {
+            "id": 3,
+            "date": "Jan 30, 2025",
+            "time": "3:00 PM",
+            "user": "Jerome Bell",
+            "action": "Upload Docs",
+            "details": "Documents Uploaded",
+            "status": "Success"
+        },
+        {
+            "id": 4,
+            "date": "Jan 29, 2025",
+            "time": "2:00 PM",
+            "user": "Robert Fox",
+            "action": "Create Notification",
+            "details": "Push Notification created",
+            "status": "Success"
+        },
+        {
+            "id": 5,
+            "date": "Jan 28, 2025",
+            "time": "1:00 PM",
+            "user": "Ralph Edwards",
+            "action": "Create User",
+            "details": "User Management",
+            "status": "Failed"
+        },
+        {
+            "id": 6,
+            "date": "Jan 27, 2025",
+            "time": "12:00 PM",
+            "user": "Albert Flores",
+            "action": "Create Notification",
+            "details": "Push Notification created",
+            "status": "Success"
+        },
+        {
+            "id": 7,
+            "date": "Jan 26, 2025",
+            "time": "11:00 PM",
+            "user": "Ronald Richards",
+            "action": "Login",
+            "details": "Successful Login",
+            "status": "Success"
+        },
+        {
+            "id": 8,
+            "date": "Jan 25, 2025",
+            "time": "10:00 PM",
+            "user": "Eleanor Pena",
+            "action": "Upload Video",
+            "details": "Video Uploaded",
+            "status": "Success"
+        },
+        {
+            "id": 9,
+            "date": "Jan 24, 2025",
+            "time": "9:00 PM",
+            "user": "Wade Warren",
+            "action": "Create Notification",
+            "details": "Push Notification created",
+            "status": "Success"
+        },
+        {
+            "id": 10,
+            "date": "Jan 23, 2025",
+            "time": "8:00 PM",
+            "user": "Devon Lane",
+            "action": "Upload Video",
+            "details": "Video Uploaded",
+            "status": "Success"
+        },
+        {
+            "id": 11,
+            "date": "Jan 30, 2025",
+            "time": "5:00 PM",
+            "user": "Jenny Wilson",
+            "action": "Login",
+            "details": "Successful Login",
+            "status": "Success"
+        },
+        {
+            "id": 12,
+            "date": "Jan 30, 2025",
+            "time": "4:00 PM",
+            "user": "Ralph Edwards",
+            "action": "Create User",
+            "details": "User Management",
+            "status": "Success"
+        }
+    ]
+}
