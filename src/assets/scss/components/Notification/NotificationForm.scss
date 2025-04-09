@@ -17,7 +17,7 @@
             @include formLbl($font-4,600,18px,$black-clr,0px);
         }
         .ct-inp {
-            @include ctFormInp(52px,6px,$white-bg,$font-4,18px,15px 15px 15px 23px,center);
+            @include ctFormInpTwo(52px,6px,$white-bg,$black-clr,$font-4,18px,15px 15px 15px 23px,center);
             &::-webkit-input-placeholder {
                 color: $black-clr;
                 font-size: 18px;
@@ -50,7 +50,7 @@
                 }
             }
             &.date-icn {
-                background-image: url(images/icons/calendar-icon.png);
+                background-image: url(/images/icons/calendar-icon.png);
                 background-repeat: no-repeat;
                 background-position: right 1rem center;
                 background-size: 18px;
@@ -62,7 +62,7 @@
             }
         }
         .ct-text {
-            @include ctFormInp(auto,6px,$white-bg,$font-4,18px,15px 15px 15px 23px,start);
+            @include ctFormInpTwo(auto,6px,$white-bg,$black-clr,$font-4,18px,15px 15px 15px 23px,flex-start);
             &::-webkit-input-placeholder {
                 color: $black-clr;
                 font-size: 18px;
@@ -82,7 +82,7 @@
         }
         .ct-drp {
             .ct-btn {
-                @include ctFormInp(52px,6px,$white-bg,$font-4,18px,15px 15px 15px 23px,center);
+                @include ctFormInpTwo(52,6px,$white-bg,$black-clr,$font-4,18px,15px 15px 15px 23px,center);
                 &:after {
                     display: none;
                 }

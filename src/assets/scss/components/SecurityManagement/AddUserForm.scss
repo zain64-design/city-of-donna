@@ -1,0 +1,105 @@
+@use '../../utils' as *;
+
+.add-user-card {
+    padding: 37px 25px 25px;
+    border: none !important;
+    border-radius: 16px !important;
+    &>form {
+        padding: 0 30px;
+        .check-area {
+            .role-lbl {
+                @include ctParaTwo($font-3,400,16px,$black-clr);
+                margin-bottom: 14px;
+            }
+            .ct-radio {
+                padding-left: 1.8em;
+                .form-check-input {
+                    height: 24px;
+                    width: 24px;
+                    margin-top: 0;
+                    margin-left: -1.8em;
+                    border: 1px solid $black-clr;
+                    &:checked {
+                        background-color: $prim-bg;
+                        border-color: $prim-clr
+                    }
+                }
+                .form-check-label {
+                   @include ctParaTwo($font-3,400,16px,$black-clr);
+                   text-transform: capitalize;
+                }
+            }
+        }
+        .inp-area {
+            padding-bottom: 38px;
+            &>.form-label {
+                margin-bottom: 11px;
+                @include formLbl($font-4,600,14px,$black-clr-9,0px);
+            }
+            &>.ct-inp {
+                @include ctFormInpTwo(52px,6px,$white-bg-2,$black-clr,$font-4,14px,15px 15px 15px 20px,center);
+                &::-webkit-input-placeholder {
+                    color: $grey-clr;
+                    font-size: 14px;
+                    text-transform: capitalize;
+                }
+                &::-moz-placeholder {
+                    color: $grey-clr;
+                    font-size: 14px;
+                    text-transform: capitalize;
+                }
+                &:-ms-input-placeholder {
+                    color: $grey-clr;
+                    font-size: 14px;
+                    text-transform: capitalize;
+                }
+                &:-moz-placeholder {
+                    color: $grey-clr;
+                    font-size: 14px;
+                    text-transform: capitalize;
+                }
+                &[type='password'] {
+                    font-family: $font-4;
+                    &::-webkit-input-placeholder {
+                        font-family: $font-2;
+                    }
+                    &::-moz-placeholder {
+                        font-family: $font-2;
+                    }
+                    &:-ms-input-placeholder {
+                        font-family: $font-2;
+                    }
+                    &:-moz-placeholder {
+                        font-family: $font-2;
+                    }
+                }
+                &.date-icn {
+                    background-image: url(/images/icons/calendar-icon.png);
+                    background-repeat: no-repeat;
+                    background-position: right 1rem center;
+                    background-size: 18px;
+                }
+                &[type='date'] {
+                    &::-webkit-calendar-picker-indicator {
+                        background: none;
+                    }
+                }
+                &::-webkit-outer-spin-button {
+                    -webkit-appearance: none;
+                    margin: 0;
+                }
+                &::-webkit-inner-spin-button {
+                    -webkit-appearance: none;
+                    margin: 0;
+                }
+                &[type="number"] {
+                    -moz-appearance: textfield;
+                }
+            }
+        }
+        .btn-submit {
+            @include solidBtn($font-2,700,18px,56px,100%,8px,100%);
+            margin-top: 54px;
+        }
+    }
+}

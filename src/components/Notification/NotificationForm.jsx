@@ -4,14 +4,12 @@ import Text from '../UI/Text'
 import CTButton from '../UI/CTButton';
 import CtSelect from '../UI/CtSelect';
 import '../../assets/scss/components/Notification/NotificationForm.scss'
+import useDateInput from '../../utils/hooks/useInputDate';
 
 const NotificationForm = () => {
     const [selectedValue, setSelectedValue] = useState('');
     const [selectedDate, setSelectedDate] = useState('');
-    const [inputType, setInputType] = useState('text');
-    const handleDateClick = () => {
-        setInputType('date');
-    };
+    const { inputType, handleDateClick } = useDateInput();
 
     const options = [
         { value: 'inAppNotifications', label: 'In App Notifications' },

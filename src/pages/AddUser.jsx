@@ -1,9 +1,9 @@
 import React from 'react'
-import InnerBannerTitle from '../components/Common/InnerBannerTitle'
 import { Card, Col, Row } from 'react-bootstrap'
-import ActivityLogTable from '../components/ActivityLog/ActivityLogTable'
-import Paginations from '../components/UI/Paginations'
-import useAOS from '../utils/hooks/useAOS'
+import useAOS from '../utils/hooks/useAOS';
+import InnerBannerTitle from '../components/Common/InnerBannerTitle';
+import AddUserForm from '../components/SecurityManagement/AddUserForm';
+import '../assets/scss/components/SecurityManagement/AddUserForm.scss'
 
 const AddUser = () => {
 
@@ -15,11 +15,10 @@ const AddUser = () => {
         <div className="container-ct">
             <Row>
                 <Col xs={12} sm={12} md={12} lg={12} xl={12} xxl={12}>
-                <Card className="gb-tb2-card">
-                    <InnerBannerTitle buttonClass='ct-arrow' mainHeadClass='xl-head' mainHead='Activity Log'/>
-                    <ActivityLogTable/>
+                <Card className="add-user-card">
+                  <InnerBannerTitle buttonClass='ct-arrow' mainHeadClass='md-head' mainHead='Add User'/>
+                  <AddUserForm/>
                 </Card>
-                <Paginations/>
                 </Col>
             </Row>
         </div>

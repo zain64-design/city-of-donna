@@ -74,13 +74,13 @@
     align-content: center;
 }
 
-@mixin ctFormInp($height,$border-radius,$background-color,$font-family,$font-size,$padding,$align-content) {
+@mixin ctFormInpTwo($height,$border-radius,$background-color,$color,$font-family,$font-size,$padding,$align-content) {
     height: $height;
     width: 100%;
     border-radius: $border-radius;
     border: none;
     background-color: $background-color;
-    color: $black-clr;
+    color: $color;
     font-family: $font-family;
     font-weight: 400;
     font-size: $font-size;
