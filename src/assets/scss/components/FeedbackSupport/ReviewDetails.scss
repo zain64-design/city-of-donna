@@ -1,0 +1,56 @@
+@use '../../utils' as *;
+
+.review-content {
+    margin: 74px 0 64px;
+    .review-title {
+        &>h2 {
+            @include ctHead($font-2,700,24px,$black-clr,capitalize)
+        }
+        .review-count {
+            @include ctParaTwo($font-1,400,18px,$grey-clr-7);
+        }
+        .rating-info {
+            @include flex(center,flex-start,row,wrap,16px);
+            margin: 20px 0 20px;
+            .rating-number {
+                @include ctParaTwo($font-1,700,32px,$black-clr);
+                letter-spacing: -0.22px;
+            }
+            .rating-stars {
+                @include flex(center,flex-start,row,wrap,8px);
+                svg {
+                    color: #febf60;
+                    font-size: 23px;
+                    &:nth-last-child(1) {
+                        color: #cbd5e1;
+                    }
+                }
+            }
+        }
+    }
+    .rating-info-text {
+        .rating-bars {
+            .rating-row {
+                display: grid;
+                margin-bottom: 8px;
+                align-items: center;
+                gap: 16px;
+                grid-template-columns: 2% 100%;
+                &>span {
+                    @include ctParaTwo($font-1,400,18px,$grey-clr-7); 
+                }
+                .progress-area {
+                    .progress {
+                        width: 100%;
+                        background-color: #F3EEEE;
+                        height: 8px;
+                        min-width: 236px;
+                        .progress-bar {
+                            border-radius: 50px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

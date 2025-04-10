@@ -17,7 +17,7 @@ const UserManagement = () => {
             <Col xs={12} sm={12} md={12} lg={12} xl={12} xxl={12}>
               <UserSearchBar />
               <UserTable/>
-              <Paginations />
+              <Paginations ctClass='justify-content-end d-flex align-items-center gap-3' />
             </Col>
           </Row>
         </div>

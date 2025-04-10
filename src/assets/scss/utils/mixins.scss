@@ -119,12 +119,34 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    transition: all .5s ease-in-out;
+    transition: all .3s ease-in-out;
+    position: relative;
     &:hover {
         background-color: $white-bg;
         color: $prim-clr;
         border-color: $prim-clr;
     }
+}
+
+@mixin ctBtn($font-family,$font-weight,$font-size,$height,$width,$border-radius,$border,$max-width,$color,$background) {
+    font-family: $font-family;
+    font-weight: $font-weight;
+    font-size: $font-size;
+    height: $height;
+    width: $width;
+    border-radius: $border-radius;
+    border: $border;
+    max-width: $max-width;
+    color: $color;
+    padding: 6px;
+    background: $background;
+    background-size: 100%;
+    text-transform: capitalize;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all .3s ease-in-out;
+    position: relative;
 }
 
 @mixin flex ($align-items,$justify-content,$flex-direction,$flex-wrap,$gap) {

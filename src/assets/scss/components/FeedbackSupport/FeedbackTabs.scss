@@ -1,0 +1,64 @@
+@use '../../utils' as *;
+
+.feedback-area {
+    .pagination-wrap {
+        &>span {
+            font-size: 18px;
+            color: $prim-clr-2;
+        }
+        .pagination {
+            .page-item {
+                .page-link {
+                    height: 30px;
+                    width: 30px;
+                    font-size: 18px;
+                    border-color: $prim-clr-2;
+                    color: $prim-clr-2;
+                }
+                &.active {
+                    .page-link {
+                        color: $white-clr;
+                    }
+                }
+            }
+        }
+    }
+    .ct-feedback {
+        border: none;
+        gap: 64px;
+        margin-bottom: 38px;
+        .nav-item {
+            .nav-link {
+               @include ctBtn($font-3,600,24px,auto,342px,0,none,100%,$black-clr,transparent);
+               justify-content: flex-start;
+               align-items: start;
+               &::before {
+                content: '';
+                position: absolute;
+                bottom: -3px;
+                left: 0;
+                right: 0;
+                width: 100%;
+                height: 3px;
+                border-radius: 50px;
+                background-color: transparent;
+                transition: all 0.3s ease-in-out;
+               }
+               &:hover {
+                background: transparent;
+                color: $prim-clr-2;
+                &::before {
+                    background-color: $prim-bg-2;
+                   }
+               }
+               &.active {
+                background: transparent;
+                color: $prim-clr-2;
+                &::before {
+                    background-color: $prim-bg-2;
+                   }
+               }
+            }
+        }
+    }
+}

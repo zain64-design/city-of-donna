@@ -19,7 +19,7 @@ const ActivityLog = () => {
                     <InnerBannerTitle buttonClass='ct-arrow' mainHeadClass='xl-head' mainHead='Activity Log'/>
                     <ActivityLogTable/>
                 </Card>
-                <Paginations/>
+                <Paginations ctClass='justify-content-end d-flex align-items-center gap-3' />
                 </Col>
             </Row>
         </div>

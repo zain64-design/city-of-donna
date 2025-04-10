@@ -79,7 +79,7 @@ const SecurityTable = () => {
       <Card className='sec-tb-card'>
         <InnerBtnTitle mainTitle='User Access Level Settings' btnTitle='create user' navigateTo='/security-management/add-user'/>
         <CustomTable tbHeader={tbHeader} data={data} isLoading={isLoading} error={error} renderRow={renderRow} tbClass='security-table mt-4' />
-        <Paginations />
+        <Paginations ctClass='justify-content-end d-flex align-items-center gap-3' />
       </Card>
     </>
   )

@@ -1,0 +1,26 @@
+@use '../../utils' as *;
+
+.review-tab-area {
+    &>h4 {
+        @include ctHead($font-1,700,24px,$black-clr,capitalize);
+        margin-bottom: 19px;
+    }
+    .ct-review {
+        border: none;
+        gap: 16px;
+        margin-bottom: 38px;
+        .nav-item {
+            .nav-link {
+               @include ctBtn($font-1,400,18px,48px,165px,50px,none,100%,$prim-clr-2,$white-bg);
+               &:hover {
+                background: $prim-bg-2;
+                color: $white-clr;
+               }
+               &.active {
+                background: $prim-bg-2;
+                color: $white-clr;
+               }
+            }
+        }
+    }
+}

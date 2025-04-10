@@ -16,6 +16,7 @@ import ActivityLog from './pages/ActivityLog';
 import LogDetails from './pages/LogDetails';
 import AddUser from './pages/AddUser';
 import AuditLog from './pages/AuditLog';
+import RespondFeedback from './pages/RespondFeedback';
 
 function App() {
 
@@ -35,6 +36,10 @@ function App() {
               <Route path='/technical-monitoring' element={<TechnicalMonitoring />} />
               <Route path='/analytics-reporting' element={<AnalyticsReporting />} />
               <Route path='/feedback-support' element={<FeedbackSupport />} />
+              <Route path='/feedback-support'>
+                <Route index element={<FeedbackSupport />}/>
+                <Route path='/feedback-support/respond' element={<RespondFeedback/>}/>
+              </Route>
               <Route path='/security-management'>
                 <Route index element={<SecurityManagement />}/>
                 <Route path='/security-management/add-user' element={<AddUser/>}/>
