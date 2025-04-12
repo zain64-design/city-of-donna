@@ -1,0 +1,47 @@
+@use '../../utils' as *;
+
+.guide-box {
+    padding: 9px 7px !important;
+    background: transparent !important;
+    border-color: $grey-clr-10;
+    height: 100%;
+    figure {
+        position: relative;
+        overflow: hidden;
+        margin-bottom: 0;
+        .file-icon {
+            height: 64px;
+            object-fit: contain;
+            object-position: center;
+            margin: 41px auto;
+            display: block;
+        }
+        .video-thumb {
+            height: 147px;
+            width: 100%;
+            object-fit: cover;
+            object-position: center;
+            margin: 0 auto;
+            display: block;
+            border-radius: 8px;
+        }
+        .play-btn {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            @include ctFlex(center,center);
+        }
+    }
+    .desc {
+        padding: 6px 12px 6px;
+        &>a {
+            @include ctHead($font-4,400,16px,$black-clr,capitalize);
+            display: block;
+        }
+        span {
+            @include ctParaTwo($font-4,400,16px,$grey-clr);
+        }
+    }
+}

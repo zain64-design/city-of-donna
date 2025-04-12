@@ -1,0 +1,11 @@
+@use '../../utils' as *;
+
+.user-engage-box {
+    padding: 39px 31px 48px 24px !important;
+    border: none !important;
+    border-radius: 16px !important;
+    margin: 0 0 20px 0 !important;
+    h4 {
+        @include ctHead($font-2,700,24px,$black-clr,capitalize);
+    }
+}

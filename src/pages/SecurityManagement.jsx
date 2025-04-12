@@ -17,7 +17,7 @@ const SecurityManagement = () => {
       <div className="container-ct">
         <Row>
           <Col xs={12} sm={12} md={12} lg={12} xl={12} xxl={12}>
-            <InnerHeadTitle innerTitle='Security Management' btnText='Audit Logs' showIcon={true} btnIcon={<LogIcn/>} btnVariant="log" navigateTo='/security-management/audit-log' />
+            <InnerHeadTitle innerTitle='Security Management' btnText='Audit Logs' btnIcon={<LogIcn/>} btnVariant="log" navigateTo='/security-management/audit-log' />
             <SecurityTable/>
           </Col>
         </Row>

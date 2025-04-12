@@ -149,6 +149,44 @@
     position: relative;
 }
 
+@mixin ctRdBtn($color,$font-family,$font-weight,$font-size,$text-transform,$padding) {
+    background: transparent;
+    color: $color;
+    font-family: $font-family;
+    font-weight: $font-weight;
+    font-size: $font-size;
+    text-transform: $text-transform;
+    padding: $padding;
+    border-radius: 0;
+    border: none;
+    transition: all 0.2s ease-in-out;
+    position: relative;
+}
+
+@mixin ctRdBtnBefore() {
+    content: '';
+    position: absolute;
+    top: 2px;
+    left: 0;
+    height: 16px;
+    width: 16px;
+    border-radius: 50%;
+    border: 1px solid $grey-clr;
+}
+
+@mixin ctRdBtnAfter() {
+    content: '';
+    position: absolute;
+    top: 5px;
+    left: 3px;
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    opacity: 0;
+    background: $prim-bg;
+    transition: all 0.2s ease-in-out;
+}
+
 @mixin flex ($align-items,$justify-content,$flex-direction,$flex-wrap,$gap) {
     display: flex;
     align-items: $align-items;

@@ -1,0 +1,27 @@
+@use '../../utils' as *;
+
+.stats-box {
+    padding: 26px 30px 30px 30px !important;
+    border: none !important;
+    border-radius: 16px !important;
+    .ct-flex {
+        @include flex(center,flex-start,row,wrap,11px);
+        figure {
+            margin-bottom: 0;
+            .stat-icon {
+                height: 32px;
+                object-fit: contain;
+                object-position: center;
+            }
+        }
+        small {
+            @include ctParaTwo($font-2,600,16px,$black-clr-4);
+        }
+    }
+    .desc {
+        h6 {
+            @include ctHead($font-2,900,32px,$black-clr-4,capitalize);
+            margin-top: 32px;
+        }
+    }
+}

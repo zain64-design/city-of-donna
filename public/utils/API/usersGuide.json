@@ -1,0 +1,30 @@
+{
+    "userGuide": [
+        {
+            "id": 1,
+            "title": "User Manual",
+            "size": "2 Mb",
+            "thumb": "/images/icons/fl1.png"
+        },
+        {
+            "id": 2,
+            "title": "Training Guide",
+            "size": "525 Kb",
+            "thumb": "/images/icons/fl2.png"
+        },
+        {
+            "id": 3,
+            "title": "Training Video 1",
+            "size": "64 Mb",
+            "thumb": "/images/icons/vd1.png",
+            "videoLink": "/images/video/vd1.mp4"
+        },
+        {
+            "id": 4,
+            "title": "Training Video 2",
+            "size": "64 Mb",
+            "thumb": "/images/icons/vd1.png",
+            "videoLink": "/images/video/vd2.mp4"
+        }
+    ]
+}

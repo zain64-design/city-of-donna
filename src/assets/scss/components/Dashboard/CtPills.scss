@@ -1,0 +1,30 @@
+@use '../../utils' as *;
+
+.ct-pills {
+    .nav-item {
+        .nav-link {
+            @include ctRdBtn($grey-clr,$font-2,500,14px,capitalize,0px 30px 0 25px);
+            &::before {
+                @include ctRdBtnBefore();
+            }
+            &::after {
+                @include ctRdBtnAfter();
+            }
+            &.active {
+                background: transparent;
+                color: $grey-clr;
+                &::after {
+                    opacity: 1;
+                }
+                &::before {
+                    border: 1px solid $prim-clr;
+                }
+            }
+            &:hover {
+                &::after {
+                    opacity: 1;
+                }
+            }
+        }
+    }
+}

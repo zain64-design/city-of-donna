@@ -1,0 +1,20 @@
+@use '../../utils' as *;
+
+.activity-box {
+    padding: 17px !important;
+    border: 1px solid $grey-clr-9 !important;
+    border-radius: 16px !important;
+    margin-top: 39px;
+    .ct-flex {
+        span {
+            @include ctParaTwo($font-2,500,18px,$grey-clr-2);
+            margin-bottom: 20px;
+            display: block;
+        }
+    }
+    .desc {
+        h6 {
+            @include ctHead($font-2,700,24px,$black-clr,unset);
+        }
+    }
+}

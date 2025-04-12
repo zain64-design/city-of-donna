@@ -1,0 +1,43 @@
+@use '../../utils' as *;
+
+.server-box {
+    padding: 16px 18px !important;
+    border-radius: 16px !important;
+    border: none !important;
+    .tp-area {
+        h6 {
+            @include ctHead($font-3,600,18px,$black-clr,capitalize);
+            margin-bottom: 10px;
+        }
+        h5 {
+            @include ctHead($font-3,600,32px,$green-clr-2,uppercase);
+            display: inline-flex;
+            align-items: center;
+            gap: 11px;
+            small {
+                @include ctParaTwo($font-3,400,16px,$grey-clr,);
+                text-transform: lowercase;
+            }
+        }
+    }
+    .btm-area {
+        margin-top: 30px;
+        span {
+            @include ctHead($font-3,500,18px,$grey-clr,unset);
+        }
+        h4 {
+            @include ctHead($font-3,600,32px,$black-clr,unset);
+        }
+    }
+    .chart-area {
+        figure {
+            .odometer-img {
+                height: 122px;
+                object-fit: contain;
+                object-position: center;
+                margin: 0 auto;
+                display: block;
+            }
+        }
+    }
+}

@@ -5,6 +5,7 @@ import userNotificationReducer from './slice/userNotification'
 import userAccessReducer from './slice/userAccess'
 import userAuditReducer from './slice/userAudit'
 import userBackupReducer from './slice/userBackup'
+import userGuideReducer from './slice/userGuide'
 
 const store = configureStore({
     devTools: process.env.NODE_ENV !== 'production',
@@ -16,6 +17,7 @@ const store = configureStore({
         userAccess: userAccessReducer,
         userAudit: userAuditReducer,
         userBackup: userBackupReducer,
+        userGuide: userGuideReducer,
     },
 })
 

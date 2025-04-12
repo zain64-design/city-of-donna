@@ -4,6 +4,8 @@ import ReviewDetails from './ReviewDetails';
 import ReviewTabs from './ReviewTabs';
 import Paginations from '../UI/Paginations'
 import '../../assets/scss/components/FeedbackSupport/FeedbackTabs.scss'
+import SearchBar from '../Common/SearchBar';
+import UserGuideCard from './UserGuideCard';
 
 const FeedbackTabs = () => {
     const [key, setKey] = useState('tab-1');
@@ -21,6 +23,8 @@ const FeedbackTabs = () => {
                     <Paginations ctClass='justify-content-start d-flex align-items-center gap-3' />
                 </Tab>
                 <Tab eventKey="tab-2" title="User Guides & Training">
+                    <SearchBar ctBtnType="search" ctBtnVariant="search" ctBtnLabel="upload" inpPlaceholder='Search'/>
+                    <UserGuideCard/>
                 </Tab>
             </Tabs>
         </>

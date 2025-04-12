@@ -1,0 +1,16 @@
+@use '../../utils' as *;
+
+.user-active-box {
+    padding: 29px 42px 19px !important;
+    border: none !important;
+    border-radius: 16px !important;
+    margin: 22px 0 34px;
+    h4 {
+        @include ctHead($font-2,700,24px,$black-clr,capitalize);
+    }
+    .btm-text {
+        @include ctHead($font-2,500,18px,$black-clr,capitalize);
+        text-align: center;
+        margin-top: 50px;
+    }
+}

@@ -1,0 +1,19 @@
+@use '../../utils' as *;
+
+.engage-box {
+    padding: 12px 10px !important;
+    border: 1px solid $grey-clr-9 !important;
+    border-radius: 8px !important;
+    .ct-flex {
+        span {
+            @include ctHead($font-3,400,18px,$black-clr,capitalize);
+            margin-bottom: 15px;
+            display: block;
+        }
+    }
+    .desc {
+        h6 {
+            @include ctHead($font-3,700,24px,$black-clr,unset);
+        }
+    }
+}

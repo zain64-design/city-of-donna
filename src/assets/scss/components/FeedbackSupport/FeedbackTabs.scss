@@ -26,7 +26,6 @@
     .ct-feedback {
         border: none;
         gap: 64px;
-        margin-bottom: 38px;
         .nav-item {
             .nav-link {
                @include ctBtn($font-3,600,24px,auto,342px,0,none,100%,$black-clr,transparent);
@@ -58,6 +57,23 @@
                     background-color: $prim-bg-2;
                    }
                }
+            }
+        }
+    }
+    .search-area {
+        margin-top: 47px;
+        margin-bottom: 0;
+        .ct-flex-main {
+            gap: 29px;
+            .btn-search {
+                max-width: 192px;
+            }
+            .ct-flex-area {
+                background: transparent;
+                border: 1px solid $grey-clr-10;
+                .search-inp {
+                    background: transparent;
+                }
             }
         }
     }

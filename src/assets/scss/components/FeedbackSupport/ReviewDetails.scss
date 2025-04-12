@@ -1,7 +1,7 @@
 @use '../../utils' as *;
 
 .review-content {
-    margin: 74px 0 64px;
+    margin: 80px 0 64px;
     .review-title {
         &>h2 {
             @include ctHead($font-2,700,24px,$black-clr,capitalize)

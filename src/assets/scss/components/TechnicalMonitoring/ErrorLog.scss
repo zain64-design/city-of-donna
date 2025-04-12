@@ -1,0 +1,26 @@
+@use '../../utils' as *;
+
+.errorLog-box {
+    padding: 18px !important;
+    border-radius: 16px !important;
+    border: none !important;
+    &>h5 {
+        @include ctHead($font-3,700,24px,$black-clr,capitalize);
+    }
+    .search-area {
+        margin-top: 11px;
+        margin-bottom: 42px;
+        .ct-flex-main {
+            gap: 15px;
+            .btn-search {
+                max-width: 204px;
+            }
+            .ct-flex-area {
+                background: $white-bg-2;
+                .search-inp {
+                    background: $white-bg-2;
+                }
+            }
+        }
+    }
+}

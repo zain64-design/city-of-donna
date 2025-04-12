@@ -1,0 +1,27 @@
+@use '../../utils' as *;
+
+.pie-card {
+    padding: 28px 14px 24px !important;
+    border: none !important;
+    border-radius: 16px !important;
+    .pie-chart {
+        .apexcharts-legend {
+            &.apx-legend-position-bottom {
+                flex-direction: column !important;
+                max-width: 250px;
+                margin: 0 auto;
+                .apexcharts-legend-series {
+                    .apexcharts-legend-text {
+                        color: $grey-clr !important;
+                        @include flex(center,space-between,row,nowrap,20px);
+                        width: 100%;
+                        &>span {
+                            color: $black-clr;
+                            font-weight: 500;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

@@ -49,8 +49,8 @@ const NotificationTable = () => {
                 <td>{date}</td>
                 <td>
                     <div className="d-flex gap-3">
-                    <CTButton buttonClass="dlt-btn" showIcon={true} icon={<EditIcn />} />
-                    <CTButton buttonClass="dlt-btn" showIcon={true} icon={<DltIcn />} />
+                    <CTButton buttonClass="dlt-btn" icon={<EditIcn />} />
+                    <CTButton buttonClass="dlt-btn" icon={<DltIcn />} />
                     </div>
                 </td>
             </tr>
