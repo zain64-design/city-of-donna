@@ -1,7 +1,7 @@
 import React from 'react'
 import { Form } from 'react-bootstrap'
 import '../../assets/scss/components/UI/SearchBar.scss'
-import CTButton from '../../components/UI/CTButton'
+import CTButton from '../UI/CTButton'
 
 const SearchBar = ({ctBtnType="", ctBtnVariant="", ctBtnLabel="", inpPlaceholder=""}) => {
 
