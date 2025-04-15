@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import ApexCharts from 'react-apexcharts';
 
 const PieChart = ({ series, labels }) => {
-const colors = ['#089BAB', '#FFBF3E', '#6347EB', '#F36068', '#01C5DB'];
+  const colors = ['#089BAB', '#FFBF3E', '#6347EB', '#F36068', '#01C5DB'];
   const [options, setOptions] = useState({
     chart: {
       type: 'pie',
@@ -157,6 +157,9 @@ const colors = ['#089BAB', '#FFBF3E', '#6347EB', '#F36068', '#01C5DB'];
         fontWeight: 'medium',
         colors: ['#FFFFFF'],
       },
+      dropShadow: {
+        enabled: false
+      }
     },
     plotOptions: {
       pie: {

@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
 import ApexCharts from 'react-apexcharts';
 
-const BarChart = () => {
+const ReportingBarChart = () => {
   const [series] = useState([{
-    name: 'engagement',
+    name: 'age',
     data: [150,230,140,180,100]
   }]);
 
@@ -21,13 +21,13 @@ const BarChart = () => {
     },
     plotOptions: {
       bar: {
-        columnWidth: '73px',
+        columnWidth: '37px',
         distributed: true,
-        borderRadius: 16,
+        borderRadius: 10,
         colors: {
-          backgroundBarColors: ['#faf2f2'],
+          backgroundBarColors: ['#fff'],
           backgroundBarOpacity: 1,
-          backgroundBarRadius: 16,
+          backgroundBarRadius: 10,
         }
       }
     },
@@ -35,7 +35,7 @@ const BarChart = () => {
     legend: { show: false },
     xaxis: {
       categories: [
-        "Daily Check-in", "Emergency SOS", "Voice Recording", "Incident Reporting", "Gameplay"],
+        "18-24", "25-34", "35-45", "45-54", "55-64"],
       labels: {
         rotate: 0,
         trim: true,
@@ -43,10 +43,10 @@ const BarChart = () => {
           fontSize: '14px',
           colors: '#64748B',
           fontFamily: '"Urbanist", sans-serif',
-          fontWeight: '400',
+          fontWeight: '500',
         }
       },
-      axisBorder: { show: true },
+      axisBorder: { show: false },
       axisTicks: { show: false },
       crosshairs: {
         show: true,
@@ -64,9 +64,9 @@ const BarChart = () => {
       tooltip: { enabled: true }
     },
     yaxis: {
-      show: true,
+      show: false,
       max: 250,
-      axisBorder: { show: true },
+      axisBorder: { show: false },
       axisTicks: { show: false },
       labels: {
         show: true,
@@ -79,7 +79,7 @@ const BarChart = () => {
         formatter: (val) => val.toFixed(0)
       }
     },
-    grid: { show: true },
+    grid: { show: false },
     colors: ['#9A0000'],
     fill: {
         type: 'gradient',
@@ -90,11 +90,11 @@ const BarChart = () => {
           inverseColors: false,
           colorStops: [
             { offset: 0, color: "#9A0000", opacity: 1 },
-            { offset: 20, color: "#9A0000", opacity: 0.8 },
-            { offset: 40, color: "#9A0000", opacity: 0.6 },
-            { offset: 60, color: "#9A0000", opacity: 0.4 },
-            { offset: 80, color: "#9A0000", opacity: 0.2 },
-            { offset: 100, color: "#9A0000", opacity: 0 }
+            { offset: 20, color: "#9A0000", opacity: 1 },
+            { offset: 40, color: "#9A0000", opacity: 1 },
+            { offset: 60, color: "#9A0000", opacity: 1 },
+            { offset: 80, color: "#9A0000", opacity: 1 },
+            { offset: 100, color: "#9A0000", opacity: 1 }
           ]
         }
       },
@@ -184,7 +184,7 @@ const BarChart = () => {
   });
 
   return (
-    <div style={{ height: '350px' }}>
+    <div style={{ height: '290px' }}>
       <ApexCharts 
         options={options} 
         series={series} 
@@ -195,4 +195,4 @@ const BarChart = () => {
   );
 };
 
-export default BarChart;
+export default ReportingBarChart;

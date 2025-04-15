@@ -3,7 +3,7 @@ import useAOS from '../utils/hooks/useAOS';
 import InnerHeadTitle from '../components/Common/InnerHeadTitle';
 import ServerBox from '../components/TechnicalMonitoring/ServerBox';
 import TimeBox from '../components/TechnicalMonitoring/TimeBox';
-import ErrorLog from '../components/TechnicalMonitoring/ErrorLog';
+import ErrorLogTable from '../components/TechnicalMonitoring/ErrorLogTable';
 import CrashStats from '../components/TechnicalMonitoring/CrashStats';
 
 const TechnicalMonitoring = () => {
@@ -15,7 +15,7 @@ const TechnicalMonitoring = () => {
         <InnerHeadTitle innerTitle='Server Health'/>
         <ServerBox/>
         <TimeBox/>
-        <ErrorLog/>
+        <ErrorLogTable/>
         <CrashStats/>
       </div>
     </div>

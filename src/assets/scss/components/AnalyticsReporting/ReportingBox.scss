@@ -1,0 +1,44 @@
+@use '../../utils' as *;
+
+.report-box {
+    margin-top: 35px;
+    @include ctBox(24px,16px);
+    .tp-area {
+        h6 {
+            @include ctHead($font-2,600,18px,$black-clr-11,capitalize);
+            letter-spacing: -1px;
+        }
+    }
+    .desc {
+        .lg-txt {
+            @include ctHead($font-2,700,32px,$black-clr-11,uppercase);
+        }
+        .sm-txt {
+            @include ctHead($font-2,500,14px,$grey-clr-11,capitalize); 
+        }
+    }
+    .desc {
+        margin-top: 23px; 
+    }
+    .donut-chart {
+        .apexcharts-canvas {
+            margin: 0 auto;
+        }
+        .apexcharts-legend {
+            &.apx-legend-position-bottom {
+                justify-content: space-between;
+                .apexcharts-legend-series {
+                    .apexcharts-legend-text {
+                        color: $black-clr !important;
+                        @include flex(center,space-between,row,nowrap,10px);
+                        width: 100%;
+                        &>span {
+                            color: $black-clr;
+                            font-weight: 600;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

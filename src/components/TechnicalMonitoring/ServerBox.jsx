@@ -11,7 +11,7 @@ const ServerBox = () => {
 
     return (
         <>
-            <Row>
+            <Row className='gx-3 mt-5'>
                 <Col xs={12} sm={6} md={4} lg={3} xl={3} xxl={3} className='mb-3'>
                     <Card className="server-box">
                         <div className="tp-area">

@@ -1,10 +1,10 @@
 import React, { useState } from 'react';
 import ApexCharts from 'react-apexcharts';
 
-const BarChart = () => {
+const CrashBarChart = () => {
   const [series] = useState([{
-    name: 'engagement',
-    data: [150,230,140,180,100]
+    name: 'crash',
+    data: [100,110,120,100,110,220,190,230,100,100,110,320,100,330,130,100,110,120,100,110,220,190,230,100,100,110,320,100,330,130]
   }]);
 
   const [options] = useState({
@@ -21,21 +21,20 @@ const BarChart = () => {
     },
     plotOptions: {
       bar: {
-        columnWidth: '73px',
+        columnWidth: '15px',
         distributed: true,
-        borderRadius: 16,
+        borderRadius: 8,
         colors: {
-          backgroundBarColors: ['#faf2f2'],
+          backgroundBarColors: ['#f5e5e5'],
           backgroundBarOpacity: 1,
-          backgroundBarRadius: 16,
+          backgroundBarRadius: 8,
         }
       }
     },
     dataLabels: { enabled: false },
     legend: { show: false },
     xaxis: {
-      categories: [
-        "Daily Check-in", "Emergency SOS", "Voice Recording", "Incident Reporting", "Gameplay"],
+      categories: ["","2","", "4","", "6","", "8","", "10","", "12","", "14","", "16","", "18","", "20","","22","", "24","", "26","", "28","", "30"],
       labels: {
         rotate: 0,
         trim: true,
@@ -46,7 +45,7 @@ const BarChart = () => {
           fontWeight: '400',
         }
       },
-      axisBorder: { show: true },
+      axisBorder: { show: false },
       axisTicks: { show: false },
       crosshairs: {
         show: true,
@@ -65,21 +64,21 @@ const BarChart = () => {
     },
     yaxis: {
       show: true,
-      max: 250,
-      axisBorder: { show: true },
+      max: 400,
+      axisBorder: { show: false },
       axisTicks: { show: false },
       labels: {
         show: true,
         style: {
             fontSize: '13.7px',
-            colors: '#64748B',
+            colors: '#808080',
             fontFamily: '"Inter", sans-serif',
             fontWeight: '600',
           },
         formatter: (val) => val.toFixed(0)
       }
     },
-    grid: { show: true },
+    grid: { show: false },
     colors: ['#9A0000'],
     fill: {
         type: 'gradient',
@@ -90,11 +89,11 @@ const BarChart = () => {
           inverseColors: false,
           colorStops: [
             { offset: 0, color: "#9A0000", opacity: 1 },
-            { offset: 20, color: "#9A0000", opacity: 0.8 },
-            { offset: 40, color: "#9A0000", opacity: 0.6 },
-            { offset: 60, color: "#9A0000", opacity: 0.4 },
-            { offset: 80, color: "#9A0000", opacity: 0.2 },
-            { offset: 100, color: "#9A0000", opacity: 0 }
+            { offset: 20, color: "#9A0000", opacity: 1 },
+            { offset: 40, color: "#9A0000", opacity: 1 },
+            { offset: 60, color: "#9A0000", opacity: 1 },
+            { offset: 80, color: "#9A0000", opacity: 1 },
+            { offset: 100, color: "#9A0000", opacity: 1 }
           ]
         }
       },
@@ -104,11 +103,11 @@ const BarChart = () => {
       options: {
         plotOptions: {
           bar: {
-            borderRadius: 5,
+            borderRadius: 2,
             colors: {
-              backgroundBarRadius: 5,
+              backgroundBarRadius: 2,
             },
-            columnWidth: '25px'
+            columnWidth: '4px'
           }
         },
         xaxis: {
@@ -123,7 +122,11 @@ const BarChart = () => {
       options: {
         plotOptions: {
           bar: {
-            columnWidth: '50px'
+            borderRadius: 4,
+            columnWidth: '8px',
+            colors: {
+                backgroundBarRadius: 4,
+              },
           }
         },
         xaxis: {
@@ -138,7 +141,7 @@ const BarChart = () => {
       options: {
         plotOptions: {
           bar: {
-            columnWidth: '50px'
+            columnWidth: '15px'
           }
         },
         xaxis: {
@@ -153,7 +156,7 @@ const BarChart = () => {
       options: {
         plotOptions: {
           bar: {
-            columnWidth: '50px'
+            columnWidth: '15px',
           }
         },
         xaxis: {
@@ -165,11 +168,15 @@ const BarChart = () => {
       }
     },
     {
-      breakpoint: 1440,
+      breakpoint: 1400,
       options: {
         plotOptions: {
           bar: {
-            columnWidth: '50px'
+            columnWidth: '12px',
+            borderRadius: 6,
+            colors: {
+              backgroundBarRadius: 6,
+            },
           }
         },
         xaxis: {
@@ -179,14 +186,30 @@ const BarChart = () => {
           }
         }
       }
-    }
+    },
+    {
+        breakpoint: 1600,
+        options: {
+          plotOptions: {
+            bar: {
+              columnWidth: '15px'
+            }
+          },
+          xaxis: {
+            labels: {
+              trim: true,
+              style: { fontSize: '10px' }
+            }
+          }
+        }
+      }
   ]
   });
 
   return (
-    <div style={{ height: '350px' }}>
-      <ApexCharts 
-        options={options} 
+    <div style={{ height: '380px' }}>
+      <ApexCharts
+        options={options}
         series={series} 
         type="bar" 
         height="100%"
@@ -195,4 +218,4 @@ const BarChart = () => {
   );
 };
 
-export default BarChart;
+export default CrashBarChart;

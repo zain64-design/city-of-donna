@@ -1,0 +1,38 @@
+@use '../../utils' as *;
+
+.user-location {
+    @include flex(center,flex-start,row,wrap,13px);
+    margin-top: 18px;
+    figure {
+        margin-bottom: 0;
+        .flag-icon {
+            height: 27px;
+            width: 27px;
+            border-radius: 50%;
+            object-position: center;
+            object-fit: cover;
+        }
+    }
+    .info-area {
+        h6 {
+            @include ctHead($font-5,600,15px,$grey-clr-12,unset);
+        }
+        small {
+            @include ctHead($font-5,400,13px,$grey-clr-11,unset);
+        }
+    }
+    .progress {
+        width: 100%;
+        max-width: 120px;
+        height: 6px;
+        background-color: $white-bg-4;
+        .progress-bar {
+            background-color: $prim-bg-2;
+            border-radius: 50px;
+        }
+    }
+    .percent {
+        color: $green-clr-4;
+        @include ctHead($font-5,600,15px,$green-clr-4,unset);
+    }
+}

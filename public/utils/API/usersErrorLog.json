@@ -1,0 +1,100 @@
+{
+    "errorLogs": [
+        {
+            "id": 1,
+            "date": "Jan 30, 2025",
+            "time": "07:32:19 PM",
+            "type": "EMERGENCY",
+            "message": "Backup Failed",
+            "csv": "/images/file/dummyCSV.csv"
+        },
+        {
+            "id": 2,
+            "date": "Jan 30, 2025",
+            "time": "07:32:19 PM",
+            "type": "CRITICAL",
+            "message": "Verification Failed",
+            "csv": "/images/file/dummyCSV.csv"
+        },
+        {
+            "id": 3,
+            "date": "Jan 30, 2025",
+            "time": "07:32:19 PM",
+            "type": "ALERT",
+            "message": "Unknown Error",
+            "csv": "/images/file/dummyCSV.csv"
+        },
+        {
+            "id": 4,
+            "date": "Jan 29, 2025",
+            "time": "07:32:19 PM",
+            "type": "WARNING",
+            "message": "Backup Failed",
+            "csv": "/images/file/dummyCSV.csv"
+        },
+        {
+            "id": 5,
+            "date": "Jan 28, 2025",
+            "time": "07:32:19 PM",
+            "type": "NOTICE",
+            "message": "Unknown Error",
+            "csv": "/images/file/dummyCSV.csv"
+        },
+        {
+            "id": 6,
+            "date": "Jan 27, 2025",
+            "time": "07:32:19 PM",
+            "type": "DEBUG",
+            "message": "Unknown Error",
+            "csv": "/images/file/dummyCSV.csv"
+        },
+        {
+            "id": 7,
+            "date": "Jan 26, 2025",
+            "time": "07:32:19 PM",
+            "type": "INFO",
+            "message": "Verification Failed",
+            "csv": "/images/file/dummyCSV.csv"
+        },
+        {
+            "id": 8,
+            "date": "Jan 25, 2025",
+            "time": "07:32:19 PM",
+            "type": "EMERGENCY",
+            "message": "Unknown Error",
+            "csv": "/images/file/dummyCSV.csv"
+        },
+        {
+            "id": 9,
+            "date": "Jan 24, 2025",
+            "time": "07:32:19 PM",
+            "type": "CRITICAL",
+            "message": "Unknown Error",
+            "csv": "/images/file/dummyCSV.csv"
+        },
+        {
+            "id": 10,
+            "date": "Jan 23, 2025",
+            "time": "07:32:19 PM",
+            "type": "ALERT",
+            "message": "Unknown Error",
+            "csv": "/images/file/dummyCSV.csv"
+        },
+        {
+            "id": 11,
+            "date": "Jan 30, 2025",
+            "time": "07:32:19 PM",
+            "type": "EMERGENCY",
+            "message": "Unknown Error",
+            "csv": "/images/file/dummyCSV.csv"
+        },
+        {
+            "id": 12,
+            "date": "Jan 30, 2025",
+            "time": "07:32:19 PM",
+            "type": "WARNING",
+            "message": "Unknown Error",
+            "csv": "/images/file/dummyCSV.csv"
+        }
+    ]
+}

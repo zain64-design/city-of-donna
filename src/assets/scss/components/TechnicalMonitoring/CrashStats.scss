@@ -1,22 +1,18 @@
 @use '../../utils' as *;
 
-
-.time-box {
-    padding: 20px 18px !important;
-    border-radius: 8px !important;
+.crash-box {
+    padding: 37px 24px !important;
+    border-radius: 16px !important;
     border: none !important;
-    height: 100% !important;
+    margin: 33px 0 0 0;
     .tp-area {
         @include flex(center,space-between,row,wrap,10px);
         h6 {
-            @include ctHead($font-3,600,24px,$black-clr,capitalize);
-        }
-        h5 {
-            @include ctHead($font-3,600,18px,$black-clr,capitalize);
+            @include ctHead($font-3,700,24px,$black-clr,capitalize);
         }
         .ct-drp {
             .ct-btn {
-                @include ctFormSelect(40px,0,none,$white-bg,$black-clr,$font-2,400,18px,8px 10px,center);
+                @include ctFormSelect(40px,0,none,$white-bg-2,$black-clr,$font-2,400,18px,8px 10px,center);
                 min-width: 159px;
                 &::after {
                     display: none;
@@ -38,29 +34,6 @@
                         color: $prim-clr;
                     }
                 }
-            }
-        }
-    }
-    .time-area {
-        li {
-            &:not(:last-child) {
-                margin: 14px 0 28px;
-            }
-            h5 {
-                @include ctHead($font-3,600,18px,$black-clr,capitalize);
-            }
-            span {
-                @include ctParaTwo($font-3,400,16px,$grey-clr,);
-            }
-        }
-    }
-    .chart-area {
-        margin-top: 18px;
-        figure {
-            .bar-img {
-                width: 98%;
-                margin: 0 auto;
-                display: block;
             }
         }
     }

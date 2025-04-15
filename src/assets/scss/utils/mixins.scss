@@ -202,6 +202,12 @@
     justify-content: $justify-content;
 }
 
+@mixin ctBox ($padding,$border-radius) {
+    padding: $padding;
+    border: none !important; 
+    border-radius: $border-radius !important;
+}
+
 @mixin respond-to($breakpoint) {
     @if $breakpoint == 'infinite-two' {
         @media only screen and (min-width: $breakpoint-infinite-two) {
