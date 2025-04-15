@@ -1,0 +1,20 @@
+{
+    "rewrites": [
+      { "source": "/", "destination": "/index.html" },
+      { "source": "/dashboard", "destination": "/index.html" },
+      { "source": "/user-management", "destination": "/index.html" },
+      { "source": "/user-management/activity-log", "destination": "/index.html" },
+      { "source": "/user-management/activity-log/log-details", "destination": "/index.html" },
+      { "source": "/notification", "destination": "/index.html" },
+      { "source": "/technical-monitoring", "destination": "/index.html" },
+      { "source": "/analytics-reporting", "destination": "/index.html" },
+      { "source": "/feedback-support", "destination": "/index.html" },
+      { "source": "/feedback-support/respond", "destination": "/index.html" },
+      { "source": "/security-management", "destination": "/index.html" },
+      { "source": "/security-management/add-user", "destination": "/index.html" },
+      { "source": "/security-management/audit-log", "destination": "/index.html" },
+      { "source": "/backup-restore", "destination": "/index.html" },
+      { "source": "/(.*)", "destination": "/index.html" }
+    ]
+  }
+  
