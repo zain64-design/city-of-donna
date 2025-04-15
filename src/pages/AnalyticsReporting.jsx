@@ -4,7 +4,7 @@ import InnerHeadTitle from '../components/Common/InnerHeadTitle';
 import { Col, Row } from 'react-bootstrap';
 import ReportingBox from '../components/AnalyticsReporting/ReportingBox';
 import ReportingBarChart from '../components/Charts/ReportingBarChart';
-import DonutChart from '../components/Charts/donutChart';
+import DonutChart from '../components/Charts/DonutChart';
 import Image from '../components/UI/Image'
 import mapImg from '/images/chart/map.png'
 import Text from '../components/UI/Text';
