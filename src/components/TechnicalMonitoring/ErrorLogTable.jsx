@@ -57,7 +57,7 @@ const ErrorLogTable = () => {
         <Text as='h5'>Error Logs</Text>
         <SearchBar ctBtnType="search" ctBtnVariant="search" ctBtnLabel="search" inpPlaceholder='Search' />
         <Row className='justify-content-center'>
-          <Col xs={12} sm={12} md={10} lg={10} xl={11} xxl={11}>
+          <Col xs={12} sm={12} md={12} lg={12} xl={12} xxl={12} className='ps-lg-4 ps-xl-4 ps-xxl-4'>
             <CustomTable tbHeader={tbHeader} data={data} isLoading={isLoading} error={error} renderRow={renderRow} tbClass='error-log-table' />
           </Col>
         </Row>

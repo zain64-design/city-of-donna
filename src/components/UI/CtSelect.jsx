@@ -32,7 +32,7 @@ const CtSelect = ({
             </Dropdown.Toggle>
 
             <Dropdown.Menu className="w-100">
-                {options.map((option) => (
+                {options?.map((option) => (
                     <Dropdown.Item
                         key={option.value}
                         onClick={() => {

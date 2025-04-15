@@ -1,6 +1,6 @@
 import React from 'react'
 import Header from '../Header/Header'
-import SideBar from '../Sidebar/SideBar'
+import AsideBar from '../SideBar/AsideBar'
 import { Outlet } from 'react-router'
 
 const WebLayout = () => {
@@ -8,7 +8,7 @@ const WebLayout = () => {
         <>
             <Header />
             <main>
-                <SideBar />
+                <AsideBar />
                 <section className='sec-main'>
                     <div className="container-fluid">
                         <div className="inner-area">

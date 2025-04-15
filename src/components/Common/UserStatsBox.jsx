@@ -2,6 +2,8 @@ import React from 'react'
 import { Card } from 'react-bootstrap'
 import Image from '../UI/Image'
 import Text from '../UI/Text'
+import Skeleton from 'react-loading-skeleton'
+import 'react-loading-skeleton/dist/skeleton.css'
 
 const UserStatsBox = ({ boxClass = '', boxIcon = '', tpTagName = '', btmTagName = '', tpTagValue = '', btmTagValue = '' }) => {
     return (

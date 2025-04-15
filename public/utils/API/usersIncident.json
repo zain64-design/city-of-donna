@@ -1,0 +1,19 @@
+{
+    "usersIncident": [
+        {
+            "id": 1,
+            "title": "Reported Incidents",
+            "total": "24"
+        },
+        {
+            "id": 2,
+            "title": "Emergency SOS",
+            "total": "45"
+        },
+        {
+            "id": 3,
+            "title": "Voice Recordings",
+            "total": "32"
+        }
+    ]
+}

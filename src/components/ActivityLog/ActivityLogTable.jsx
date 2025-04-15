@@ -20,10 +20,10 @@ const ActivityLogTable = () => {
         const { id, userId, date, time, description } = value;
         return (
             <tr key={id}>
-                <td>{date}</td>
-                <td>{time}</td>
-                <td><Link to="/user-management/activity-log/log-details">Incident Reported</Link></td>
-                <td><Text className='ct-p'>{description} <Link to="/user-management/activity-log/log-details" className='ct-view'>view all</Link></Text></td>
+                <td className='pb-4'>{date}</td>
+                <td className='pb-4'>{time}</td>
+                <td className='pb-4'><Link to="/user-management/activity-log/log-details">Incident Reported</Link></td>
+                <td className='pb-4'><Text className='ct-p'>{description} <Link to="/user-management/activity-log/log-details" className='ct-view'>view all</Link></Text></td>
             </tr>
         )
     }

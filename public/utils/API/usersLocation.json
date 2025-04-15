@@ -1,0 +1,32 @@
+{
+    "usersLocation": [
+        {
+            "id": 1,
+            "title": "USA",
+            "total": "30k",
+            "thumb": "/images/icons/flg1.png",
+            "percent": "+25.8%"
+        },
+        {
+            "id": 2,
+            "title": "Brazil",
+            "total": "26k",
+            "thumb": "/images/icons/flg2.png",
+            "percent": "-16.2%"
+        },
+        {
+            "id": 3,
+            "title": "India",
+            "total": "22k",
+            "thumb": "/images/icons/flg3.png",
+            "percent": "+12.3%"
+        },
+        {
+            "id": 4,
+            "title": "Australia",
+            "total": "17k",
+            "thumb": "/images/icons/flg4.png",
+            "percent": "-11.9%"
+        }
+    ]
+}

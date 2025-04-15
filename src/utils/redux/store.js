@@ -7,6 +7,11 @@ import userAuditReducer from './slice/userAudit'
 import userBackupReducer from './slice/userBackup'
 import userGuideReducer from './slice/userGuide'
 import userErrorLogReducer from './slice/userErrorLogs'
+import userStatsReducer from './slice/userStats'
+import userActivitiesReducer from './slice/userActivities'
+import userIncidentReducer from './slice/userIncident'
+import userCrashStatsReducer from './slice/userCrashStats'
+import userLocationReducer from './slice/userLocation'
 
 const store = configureStore({
     devTools: process.env.NODE_ENV !== 'production',
@@ -20,6 +25,11 @@ const store = configureStore({
         userBackup: userBackupReducer,
         userGuide: userGuideReducer,
         userErrorLogs: userErrorLogReducer,
+        userStats: userStatsReducer,
+        userActivities: userActivitiesReducer,
+        userIncident: userIncidentReducer,
+        userCrashStats: userCrashStatsReducer,
+        userLocation: userLocationReducer,
     },
 })
 

@@ -10,13 +10,19 @@ const AddUserForm = () => {
     const userRole = [
         {
             id: 1,
-            label: 'Admin',
+            label: 'Patrol Officer',
             type: 'radio',
             name: 'rd1'
         },
         {
             id: 2,
-            label: 'User',
+            label: 'Detective',
+            type: 'radio',
+            name: 'rd1'
+        },
+        {
+            id: 3,
+            label: 'Supervisor',
             type: 'radio',
             name: 'rd1'
         }
@@ -56,8 +62,8 @@ const AddUserForm = () => {
                     <Form.Group as={Col} xs={12} sm={12} md={12} lg={6} xl={6} xxl={6}>
                         <Form.Group className='check-area'>
                             <Form.Label className='role-lbl'>Role</Form.Label>
-                            <div className="d-flex align-items-center justify-content-start flex-wrap gap-5">
-                                {userRole.map((value) => {
+                            <div className="d-flex align-items-center justify-content-start flex-wrap gap-3">
+                                {userRole?.map((value) => {
                                     const { id, label, type, name } = value;
                                     return (
                                         <Form.Check

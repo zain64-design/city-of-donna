@@ -3,8 +3,8 @@ import ApexCharts from 'react-apexcharts';
 
 const ReportingBarChart = () => {
   const [series] = useState([{
-    name: 'age',
-    data: [150,230,140,180,100]
+    name: 'group',
+    data: [120,80,130,70,140]
   }]);
 
   const [options] = useState({
@@ -24,6 +24,9 @@ const ReportingBarChart = () => {
         columnWidth: '37px',
         distributed: true,
         borderRadius: 10,
+        dataLabels: {
+          position: "top"
+        },
         colors: {
           backgroundBarColors: ['#fff'],
           backgroundBarOpacity: 1,
@@ -31,7 +34,21 @@ const ReportingBarChart = () => {
         }
       }
     },
-    dataLabels: { enabled: false },
+    dataLabels: { 
+      enabled: true,
+      offsetY: -30,
+      formatter: function (val, { seriesIndex, dataPointIndex, w }) {
+        const total = w.globals.seriesTotals[seriesIndex];
+        const percent = (val / total) * 100;
+        return percent.toFixed(1) + '%';
+      },
+      style: {
+        fontSize: '18px',
+        fontFamily: '"Urbanist", sans-serif',
+        fontWeight: '500',
+        colors: ['#64748B'],
+    },
+     },
     legend: { show: false },
     xaxis: {
       categories: [
@@ -65,7 +82,7 @@ const ReportingBarChart = () => {
     },
     yaxis: {
       show: false,
-      max: 250,
+      max: 150,
       axisBorder: { show: false },
       axisTicks: { show: false },
       labels: {

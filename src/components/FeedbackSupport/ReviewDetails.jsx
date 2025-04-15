@@ -36,7 +36,7 @@ const ReviewDetails = () => {
                     <Col xs='auto'>
                         <div className="rating-info-text">
                             <div className="rating-bars">
-                                {ratingsData.map((value, index) => {
+                                {ratingsData?.map((value, index) => {
                                     const {rating,percentage,color} = value;
                                     return (
                                         <div className="rating-row" key={index}>

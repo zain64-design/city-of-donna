@@ -34,7 +34,7 @@ const HistoryTable = () => {
   return (
     <>
             <Card className='audit-tb-card'>
-            <InnerBtnTitle mainTitle='Backup History' btnTitle='Create Backup' navigateTo='/backup-restore'/>
+            <InnerBtnTitle mainTitle='Backup History' btnTitle='Create Backup' navigateTo='/backup-restore' btnClassName='xl-btn'/>
                 <CustomTable tbHeader={tbHeader} data={data} isLoading={isLoading} error={error} renderRow={renderRow} tbClass='audit-table mt-5' />
             </Card>
     </>

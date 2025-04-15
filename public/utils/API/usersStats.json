@@ -1,0 +1,22 @@
+{
+    "usersStats": [
+        {
+            "id": 1,
+            "title": "Total Users",
+            "total": "16.5K",
+            "thumb": "/images/icons/st1.png"
+        },
+        {
+            "id": 2,
+            "title": "Active Users",
+            "total": "12.2K",
+            "thumb": "/images/icons/st2.png"
+        },
+        {
+            "id": 3,
+            "title": "Inactive",
+            "total": "4.3K",
+            "thumb": "/images/icons/st3.png"
+        }
+    ]
+}

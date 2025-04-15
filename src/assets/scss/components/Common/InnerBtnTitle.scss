@@ -7,6 +7,17 @@
         @include ctHead($font-3,700,24px,$black-clr,capitalize);
     }
     .btn-title {
-        @include solidBtn($font-2,500,16px,52px,185px,10px,100%)
+        @include solidBtn($font-2,500,16px,52px,185px,10px,100%);
+        &.xl-btn {
+            width: 239px;
+            background-color: $prim-bg-2;
+            font-weight: 500;
+            font-size: 18px;
+            &:hover {
+                background-color: $white-bg;
+                color: $prim-clr;
+                border-color: $prim-clr;
+            }
+        }
     }
 }

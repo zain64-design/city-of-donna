@@ -8,7 +8,7 @@ const Ratings = ({ rating }) => {
 
   return (
     <div className="rating-display">
-      {[...Array(totalStars)].map((_, index) => {
+      {[...Array(totalStars)]?.map((_, index) => {
         if (index < fullStars) {
           return <FaStar key={index} className="star filled" />;
         } else if (index === fullStars && decimalPart >= 0.5) {

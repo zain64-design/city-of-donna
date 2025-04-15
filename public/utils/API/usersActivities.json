@@ -1,0 +1,19 @@
+{
+    "usersActivities": [
+        {
+            "id": 1,
+            "title": "Avg. No of sessions",
+            "total": "2300"
+        },
+        {
+            "id": 2,
+            "title": "Avg. Time per session",
+            "total": "1h 20m"
+        },
+        {
+            "id": 3,
+            "title": "Total Downloads",
+            "total": "8420"
+        }
+    ]
+}

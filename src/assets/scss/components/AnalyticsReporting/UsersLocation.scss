@@ -14,6 +14,7 @@
         }
     }
     .info-area {
+        min-width: 70px;
         h6 {
             @include ctHead($font-5,600,15px,$grey-clr-12,unset);
         }
@@ -32,7 +33,12 @@
         }
     }
     .percent {
-        color: $green-clr-4;
         @include ctHead($font-5,600,15px,$green-clr-4,unset);
+        &.txt-green {
+            color: $green-clr-4;
+        }
+        &.txt-red {
+            color: $red-clr-2;
+        }
     }
 }

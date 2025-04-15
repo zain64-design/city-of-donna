@@ -1,29 +1,44 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import Image from '../UI/Image'
-import flgImg from '../../../public/images/icons/flg1.png'
-import { FaChevronUp } from "react-icons/fa6";
+import { FaChevronUp,FaChevronDown } from "react-icons/fa6";
 import { ProgressBar } from 'react-bootstrap';
 import Text from '../UI/Text';
 import '../../assets/scss/components/AnalyticsReporting/UsersLocation.scss'
+import { useDispatch, useSelector } from 'react-redux';
+import { getUserLocation } from '../../utils/redux/slice/userLocation';
 
 const UsersLocation = () => {
+    const dispatch = useDispatch();
+    const { data, isLoading, error } = useSelector(state => state.userLocation);
+
+    useEffect(() => {
+        dispatch(getUserLocation())
+    }, [dispatch])
+
     return (
         <>
-            <div className="user-location">
-                <figure>
-                    <Image src={flgImg} alt='flag-img' className='flag-icon' />
-                </figure>
-                <div className="info-area">
-                    <Text as='h6'>30k</Text>
-                    <Text as='small'>USA</Text>
-                </div>
-                <ProgressBar>
-                    <ProgressBar
-                        now={30} />
-                </ProgressBar>
-                <Text as='span' className='percent'><FaChevronUp /> 25.8%</Text>
-
-            </div>
+            {data?.map((value) => {
+                const {id,title,total,thumb,percent} = value;
+                const cleanedPercent = percent.replace('%', '').replace('+', '').replace('-', '') + '%';
+                const numeric = parseFloat(percent.replace('%', '').replace('+', '').replace('-', ''));
+                const isPositive = percent.includes('+');
+                return (
+                    <div className="user-location" key={id}>
+                        <figure>
+                            <Image src={thumb} alt='flag-img' className='flag-icon' />
+                        </figure>
+                        <div className="info-area">
+                            <Text as='h6'>{total}</Text>
+                            <Text as='small'>{title}</Text>
+                        </div>
+                        <ProgressBar>
+                            <ProgressBar
+                                now={numeric} />
+                        </ProgressBar>
+                        <Text as='span' className={`percent ${isPositive ? 'txt-green': 'txt-red'}`}> {isPositive ? <FaChevronUp />:<FaChevronDown />} {cleanedPercent}</Text>
+                    </div>
+                )
+            })}
         </>
     )
 }

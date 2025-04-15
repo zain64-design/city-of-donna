@@ -1,0 +1,19 @@
+{
+    "usersCrashStats": [
+        {
+            "id": 1,
+            "title": "Total Crashes",
+            "total": "5.68k"
+        },
+        {
+            "id": 2,
+            "title": "Crash Free Users",
+            "total": "98.5%"
+        },
+        {
+            "id": 3,
+            "title": "Affected Users",
+            "total": "1.5%"
+        }
+    ]
+}

@@ -12,14 +12,15 @@
     }
     ul {
         @include flex(flex-start,flex-start,row,wrap,24px);
+        max-width: 300px;
         li {
-            @include flex(flex-start,flex-start,column,wrap,3px);
-            max-width: 33%;
+            @include flex(flex-start,flex-start,column,wrap,0);
+            min-width: 45%;
             &>span {
                 @include ctHead($font-2,600,16px,$black-clr,capitalize);
             }
             &>small {
-                @include ctParaTwo($font-2,600,16px,$grey-clr-5); 
+                @include ctParaTwo($font-2,400,16px,$grey-clr-5); 
             }
         }
     }

@@ -8,7 +8,7 @@ const CustomTable = ({tbHeader=[],tbClass='',data=[],isLoading=false,error=false
       <Table className='ct-table table-borderless align-middle'>
         <thead>
           <tr>
-            {tbHeader.map((header, index) => (
+            {tbHeader?.map((header, index) => (
               <th key={index} colSpan={header.colspan && header.colspan }>{header.text}</th>
             ))}
           </tr>

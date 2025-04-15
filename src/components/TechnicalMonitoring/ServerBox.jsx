@@ -27,7 +27,7 @@ const ServerBox = () => {
                 <Col xs={12} sm={6} md={4} lg={3} xl={3} xxl={3} className='mb-3'>
                     <Card className="server-box">
                         <div className="tp-area">
-                            <Text as='h6'>Current Status</Text>
+                            <Text as='h6'>CPU Usage</Text>
                         </div>
                         <div className="chart-area">
                             <figure>
