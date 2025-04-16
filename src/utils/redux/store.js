@@ -12,6 +12,7 @@ import userActivitiesReducer from './slice/userActivities'
 import userIncidentReducer from './slice/userIncident'
 import userCrashStatsReducer from './slice/userCrashStats'
 import userLocationReducer from './slice/userLocation'
+import userSliderReducer from './slice/userSlider'
 
 const store = configureStore({
     devTools: process.env.NODE_ENV !== 'production',
@@ -30,6 +31,7 @@ const store = configureStore({
         userIncident: userIncidentReducer,
         userCrashStats: userCrashStatsReducer,
         userLocation: userLocationReducer,
+        userSlider: userSliderReducer
     },
 })
 

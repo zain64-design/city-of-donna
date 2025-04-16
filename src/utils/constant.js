@@ -11,3 +11,4 @@ export const USER_ACTIVITIES_API = import.meta.env.VITE_APP_API_USER_ACTIVITIES
 export const USER_INCIDENTS_API = import.meta.env.VITE_APP_API_USER_INCIDENTS
 export const USER_CRASH_STATS = import.meta.env.VITE_APP_API_USER_CRASH_STATS
 export const USER_LOCATION = import.meta.env.VITE_APP_API_USER_LOCATION
+export const USER_SLIDER = import.meta.env.VITE_APP_API_USER_SLIDER

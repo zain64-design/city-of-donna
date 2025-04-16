@@ -1,150 +1,95 @@
-import React, { useRef, useState } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { FreeMode,Navigation , Thumbs } from 'swiper/modules';
+import { FreeMode, Navigation, Thumbs } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/free-mode';
 import 'swiper/css/navigation';
 import 'swiper/css/thumbs';
 import '../../assets/scss/components/ActivityLog/LogSlider.scss';
 import Image from '../UI/Image';
-import lg1 from '../../../public/images/logs/lg1.png';
-import lg2 from '../../../public/images/logs/lg2.png';
-import lg3 from '../../../public/images/logs/lg3.png';
-import lg4 from '../../../public/images/logs/lg4.png';
-
-import sm1 from '../../../public/images/logs/sm1.png';
-import sm2 from '../../../public/images/logs/sm2.png';
-import sm3 from '../../../public/images/logs/sm3.png';
-import sm4 from '../../../public/images/logs/sm4.png';
+import { useDispatch, useSelector } from 'react-redux';
+import { getUserSlider } from '../../utils/redux/slice/userSlider';
 
 const LogSlider = () => {
-    const [thumbsSwiper, setThumbsSwiper] = useState(null);
+  const [thumbsSwiper, setThumbsSwiper] = useState(null);
+
+  const dispatch = useDispatch();
+
+  const { data, isLoading, error } = useSelector(state => state.userSlider);
+
+  useEffect(() => {
+    dispatch(getUserSlider());
+  }, [dispatch])
   return (
     <>
-    <div className="slider-main">
-    <Swiper
-        spaceBetween={10}
-        navigation={{
+      <div className="slider-main">
+        <Swiper
+          spaceBetween={10}
+          navigation={{
             prevEl: '.swiper-button-prev',
             nextEl: '.swiper-button-next',
-        }}
-        thumbs={{ swiper: thumbsSwiper }}
-        modules={[FreeMode,Navigation, Thumbs]}
-        className="singleSlider"
-      >
-        <SwiperSlide>
-          <Image src={lg1} alt="slider-img" />
-        </SwiperSlide>
-        <SwiperSlide>
-          <Image src={lg2} alt="slider-img" />
-        </SwiperSlide>
-        <SwiperSlide>
-          <Image src={lg3} alt="slider-img" />
-        </SwiperSlide>
-        <SwiperSlide>
-          <Image src={lg4} alt="slider-img" />
-        </SwiperSlide>
-        <SwiperSlide>
-          <Image src={lg1} alt="slider-img" />
-        </SwiperSlide>
-        <SwiperSlide>
-          <Image src={lg2} alt="slider-img" />
-        </SwiperSlide>
-        <SwiperSlide>
-          <Image src={lg3} alt="slider-img" />
-        </SwiperSlide>
-        <SwiperSlide>
-          <Image src={lg4} alt="slider-img" />
-        </SwiperSlide>
-        <SwiperSlide>
-          <Image src={lg1} alt="slider-img" />
-        </SwiperSlide>
-        <SwiperSlide>
-          <Image src={lg2} alt="slider-img" />
-        </SwiperSlide>
-        <SwiperSlide>
-          <Image src={lg3} alt="slider-img" />
-        </SwiperSlide>
-        <SwiperSlide>
-          <Image src={lg4} alt="slider-img" />
-        </SwiperSlide>
-      </Swiper>
-      <Swiper
-        onSwiper={setThumbsSwiper}
-        slidesPerView={12}
-        spaceBetween={15}
-        freeMode={true}
-        modules={[FreeMode, Navigation, Thumbs]}
-        navigation={{
+          }}
+          thumbs={{ swiper: thumbsSwiper }}
+          modules={[FreeMode, Navigation, Thumbs]}
+          className="singleSlider"
+        >
+          {data?.map((value) => {
+            const { id, mainImg, thumbImg } = value;
+            return (
+              <SwiperSlide key={id}>
+                <Image src={mainImg} alt="slider-img" />
+              </SwiperSlide>
+            )
+          })}
+        </Swiper>
+        <Swiper
+          onSwiper={setThumbsSwiper}
+          slidesPerView={12}
+          spaceBetween={15}
+          freeMode={true}
+          modules={[FreeMode, Navigation, Thumbs]}
+          navigation={{
             prevEl: '.swiper-button-prev',
             nextEl: '.swiper-button-next',
-        }}
-        breakpoints={{
+          }}
+          breakpoints={{
             0: {
-                slidesPerView: 2,
+              slidesPerView: 2,
             },
             576: {
-                slidesPerView: 2,
+              slidesPerView: 2,
             },
             768: {
-                slidesPerView: 3,
+              slidesPerView: 3,
             },
             992: {
-                slidesPerView: 5,
+              slidesPerView: 5,
             },
             1200: {
-                slidesPerView: 6,
+              slidesPerView: 6,
             },
             1400: {
-                slidesPerView: 8,
+              slidesPerView: 8,
             },
             1444: {
-                slidesPerView: 10,
+              slidesPerView: 10,
             },
             1599: {
-                slidesPerView: 13,
+              slidesPerView: 13,
             },
-        }}
-        className="multiSlider"
-      >
-        <SwiperSlide>
-          <Image src={sm1} alt="slider-thumb" />
-        </SwiperSlide>
-        <SwiperSlide>
-          <Image src={sm2} alt="slider-thumb" />
-        </SwiperSlide>
-        <SwiperSlide>
-          <Image src={sm3} alt="slider-thumb" />
-        </SwiperSlide>
-        <SwiperSlide>
-          <Image src={sm4} alt="slider-thumb" />
-        </SwiperSlide>
-        <SwiperSlide>
-          <Image src={sm1} alt="slider-thumb" />
-        </SwiperSlide>
-        <SwiperSlide>
-          <Image src={sm2} alt="slider-thumb" />
-        </SwiperSlide>
-        <SwiperSlide>
-          <Image src={sm3} alt="slider-thumb" />
-        </SwiperSlide>
-        <SwiperSlide>
-          <Image src={sm4} alt="slider-thumb" />
-        </SwiperSlide>
-        <SwiperSlide>
-          <Image src={sm1} alt="slider-thumb" />
-        </SwiperSlide>
-        <SwiperSlide>
-          <Image src={sm2} alt="slider-thumb" />
-        </SwiperSlide>
-        <SwiperSlide>
-          <Image src={sm3} alt="slider-thumb" />
-        </SwiperSlide>
-        <SwiperSlide>
-          <Image src={sm4} alt="slider-thumb" />
-        </SwiperSlide>
-      </Swiper>
-    </div>
+          }}
+          className="multiSlider"
+        >
+          {data?.map((value) => {
+            const { id, thumbImg } = value;
+            return (
+              <SwiperSlide key={id}>
+                <Image src={thumbImg} alt="slider-thumb" />
+              </SwiperSlide>
+            )
+          })}
+        </Swiper>
+      </div>
     </>
   )
 }
