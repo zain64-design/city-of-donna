@@ -5,7 +5,7 @@ import Image from '../UI/Image';
 import '../../assets/scss/components/FeedbackSupport/ReviewCard.scss'
 import Text from '../UI/Text';
 import Ratings from '../UI/Ratings';
-import CTButton from '../UI/CTButton'
+import CustomBtn from '../UI/CustomBtn'
 import { Link, useLocation } from 'react-router';
 
 const ReviewCard = () => {
@@ -64,7 +64,7 @@ const ReviewCard = () => {
                                 </Form.Group>
                             </Form.Group>
                             <Form.Group as={Col} xs={12} sm={12} md={12} lg={12} xl={12} xxl={12}>
-                                <CTButton label='Submit' variant='submit' type='submit'/>
+                                <CustomBtn label='Submit' variant='submit' type='submit'/>
                             </Form.Group>
                         </Form.Group>
                     </Form>

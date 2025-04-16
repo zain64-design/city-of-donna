@@ -1,7 +1,7 @@
 import React, { useEffect, useRef, useState } from 'react'
 import { Form, Row, Col, Button } from 'react-bootstrap';
 import Text from '../UI/Text'
-import CTButton from '../UI/CTButton';
+import CustomBtn from '../UI/CustomBtn';
 import CtSelect from '../UI/CtSelect';
 import '../../assets/scss/components/Notification/NotificationForm.scss'
 import useDateInput from '../../utils/hooks/useInputDate';
@@ -114,7 +114,7 @@ useEffect(() => {
                                             ))}
                                         </div>
                                     )}
-                                <CTButton variant="choose" onClick={handleButtonClick} label='Choose Files'/>
+                                <CustomBtn variant="choose" onClick={handleButtonClick} label='Choose Files'/>
                                 <input
                                     type="file"
                                     ref={fileInputRef}
@@ -133,7 +133,7 @@ useEffect(() => {
                             </Form.Group>
                         </Form.Group>
                         <Form.Group as={Col} xs={12} sm={12} md={12} lg={12} xl={12} xxl={12}>
-                            <CTButton type='submit' variant='submit' label='Submit' />
+                            <CustomBtn type='submit' variant='submit' label='Submit' />
                         </Form.Group>
                     </Row>
                 </Form>

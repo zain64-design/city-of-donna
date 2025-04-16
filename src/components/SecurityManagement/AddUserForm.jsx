@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import { Col, Form, Row } from 'react-bootstrap'
-import CTButton from '../UI/CTButton';
+import CustomBtn from '../UI/CustomBtn';
 import useDateInput from '../../utils/hooks/useInputDate';
 import ProfileImage from './ProfileImg';
 
@@ -80,7 +80,7 @@ const AddUserForm = () => {
                         </Form.Group>
                     </Form.Group>
                     <Form.Group as={Col} xs={12} sm={12} md={12} lg={12} xl={12} xxl={12}>
-                        <CTButton type='submit' variant='submit' label='submit' />
+                        <CustomBtn type='submit' variant='submit' label='submit' />
                     </Form.Group>
                 </Form.Group>
             </Form>

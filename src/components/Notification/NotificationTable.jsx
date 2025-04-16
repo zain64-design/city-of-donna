@@ -6,7 +6,7 @@ import CustomTable from '../UI/CustomTable';
 import { getUserNotification } from '../../utils/redux/slice/userNotification';
 import '../../assets/scss/components/Notification/NotificationTable.scss'
 import Text from '../UI/Text';
-import CTButton from '../UI/CTButton';
+import CustomBtn from '../UI/CustomBtn';
 
 const NotificationTable = () => {
     const dispatch = useDispatch();
@@ -49,8 +49,8 @@ const NotificationTable = () => {
                 <td>{date}</td>
                 <td>
                     <div className="d-flex gap-3">
-                    <CTButton buttonClass="dlt-btn" icon={<EditIcn />} />
-                    <CTButton buttonClass="dlt-btn" icon={<DltIcn />} />
+                    <CustomBtn buttonClass="dlt-btn" icon={<EditIcn />} />
+                    <CustomBtn buttonClass="dlt-btn" icon={<DltIcn />} />
                     </div>
                 </td>
             </tr>

@@ -1,6 +1,6 @@
 import React from 'react'
 import useGoBack from '../../utils/hooks/useGoBack';
-import CTButton from '../UI/CTButton';
+import CustomBtn from '../UI/CustomBtn';
 import Text from '../UI/Text';
 import '../../assets/scss/components/Common/InnerBannerTitle.scss'
 
@@ -16,7 +16,7 @@ const InnerBannerTitle = ({ bannerClass = '', buttonClass = '', mainHead = '', m
     return (
         <>
             <div className={`inner-banner ${bannerClass}`}>
-                <CTButton onClick={goBack} buttonClass={buttonClass} icon={<ArrowBackIcon/>} />
+                <CustomBtn onClick={goBack} buttonClass={buttonClass} icon={<ArrowBackIcon/>} />
                 <Text as='h6' className={mainHeadClass}>{mainHead}</Text>
             </div>
         </>

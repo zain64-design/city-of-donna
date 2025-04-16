@@ -2,7 +2,7 @@ import React from 'react'
 import { Button } from 'react-bootstrap'
 import PropTypes from 'prop-types';
 
-const CTButton = (
+const CustomBtn = (
     {
         type = 'button',
         variant = '',
@@ -37,7 +37,7 @@ const CTButton = (
   )
 }
 
-CTButton.PropTypes = {
+CustomBtn.PropTypes = {
   type: PropTypes.string,
   variant: PropTypes.string,
   onClick: PropTypes.func,
@@ -49,4 +49,4 @@ CTButton.PropTypes = {
   size: PropTypes.oneOf(['sm', 'md', 'lg'])
 };
 
-export default CTButton
+export default CustomBtn

@@ -5,7 +5,7 @@ import { getUserAccess } from '../../utils/redux/slice/userAccess';
 import Image from '../UI/Image'
 import { Link } from 'react-router';
 import CustomTable from '../UI/CustomTable';
-import CTButton from '../UI/CTButton';
+import CustomBtn from '../UI/CustomBtn';
 import Paginations from '../UI/Paginations';
 import '../../assets/scss/components/SecurityManagement/SecurityTable.scss'
 import InnerBtnTitle from '../Common/InnerBtnTitle';
@@ -66,8 +66,8 @@ const SecurityTable = () => {
         <td><Form.Check type="switch" id={`access-switch-${id}`} defaultChecked={access} /></td>
         <td>
           <div className="d-flex gap-3">
-          <CTButton buttonClass='act-btn' icon={<EditIcn />} />
-          <CTButton buttonClass='act-btn' icon={<DltIcn />} />
+          <CustomBtn buttonClass='act-btn' icon={<EditIcn />} />
+          <CustomBtn buttonClass='act-btn' icon={<DltIcn />} />
           </div>
         </td>
       </tr>
