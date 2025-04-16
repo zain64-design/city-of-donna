@@ -1,7 +1,7 @@
 import React from 'react'
 import Text from '../UI/Text'
 import { Col, Row } from 'react-bootstrap'
-import CTButton from '../UI/CTButton'
+import CTButton from '../UI/CTButton';
 import { useNavigate } from "react-router";
 import '../../assets/scss/components/Common/InnerHeadTitle.scss'
 
