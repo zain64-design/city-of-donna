@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import { Col, Form, Row } from 'react-bootstrap'
-import CTButton from '../UI/CTButton'
+import CTButton from '../UI/CTButton';
 import useDateInput from '../../utils/hooks/useInputDate';
 import ProfileImage from './ProfileImg';
 
