@@ -7,6 +7,15 @@ import 'swiper/css/navigation';
 import 'swiper/css/thumbs';
 import '../../assets/scss/components/ActivityLog/LogSlider.scss'
 import Image from '../UI/Image';
+import lg1 from '../../../public/images/logs/lg1.png';
+import lg2 from '../../../public/images/logs/lg2.png';
+import lg3 from '../../../public/images/logs/lg3.png';
+import lg4 from '../../../public/images/logs/lg4.png';
+
+import sm1 from '../../../public/images/logs/sm1.png';
+import sm2 from '../../../public/images/logs/sm2.png';
+import sm3 from '../../../public/images/logs/sm3.png';
+import sm4 from '../../../public/images/logs/sm4.png';
 
 const LogSlider = () => {
     const [thumbsSwiper, setThumbsSwiper] = useState(null);
@@ -24,40 +33,40 @@ const LogSlider = () => {
         className="singleSlider"
       >
         <SwiperSlide>
-          <Image src="/images/logs/lg1.png" alt="slider-img" />
+          <Image src={lg1} alt="slider-img" />
         </SwiperSlide>
         <SwiperSlide>
-          <Image src="/images/logs/lg2.png" alt="slider-img" />
+          <Image src={lg2} alt="slider-img" />
         </SwiperSlide>
         <SwiperSlide>
-          <Image src="/images/logs/lg3.png" alt="slider-img" />
+          <Image src={lg3} alt="slider-img" />
         </SwiperSlide>
         <SwiperSlide>
-          <Image src="/images/logs/lg4.png" alt="slider-img" />
+          <Image src={lg4} alt="slider-img" />
         </SwiperSlide>
         <SwiperSlide>
-          <Image src="/images/logs/lg1.png" alt="slider-img" />
+          <Image src={lg1} alt="slider-img" />
         </SwiperSlide>
         <SwiperSlide>
-          <Image src="/images/logs/lg2.png" alt="slider-img" />
+          <Image src={lg2} alt="slider-img" />
         </SwiperSlide>
         <SwiperSlide>
-          <Image src="/images/logs/lg3.png" alt="slider-img" />
+          <Image src={lg3} alt="slider-img" />
         </SwiperSlide>
         <SwiperSlide>
-          <Image src="/images/logs/lg4.png" alt="slider-img" />
+          <Image src={lg4} alt="slider-img" />
         </SwiperSlide>
         <SwiperSlide>
-          <Image src="/images/logs/lg1.png" alt="slider-img" />
+          <Image src={lg1} alt="slider-img" />
         </SwiperSlide>
         <SwiperSlide>
-          <Image src="/images/logs/lg2.png" alt="slider-img" />
+          <Image src={lg2} alt="slider-img" />
         </SwiperSlide>
         <SwiperSlide>
-          <Image src="/images/logs/lg3.png" alt="slider-img" />
+          <Image src={lg3} alt="slider-img" />
         </SwiperSlide>
         <SwiperSlide>
-          <Image src="/images/logs/lg4.png" alt="slider-img" />
+          <Image src={lg4} alt="slider-img" />
         </SwiperSlide>
       </Swiper>
       <Swiper
@@ -99,40 +108,40 @@ const LogSlider = () => {
         className="multiSlider"
       >
         <SwiperSlide>
-          <Image src="/images/logs/sm1.png" alt="slider-thumb" />
+          <Image src={sm1} alt="slider-thumb" />
         </SwiperSlide>
         <SwiperSlide>
-          <Image src="/images/logs/sm2.png" alt="slider-thumb" />
+          <Image src={sm2} alt="slider-thumb" />
         </SwiperSlide>
         <SwiperSlide>
-          <Image src="/images/logs/sm3.png" alt="slider-thumb" />
+          <Image src={sm3} alt="slider-thumb" />
         </SwiperSlide>
         <SwiperSlide>
-          <Image src="/images/logs/sm4.png" alt="slider-thumb" />
+          <Image src={sm4} alt="slider-thumb" />
         </SwiperSlide>
         <SwiperSlide>
-          <Image src="/images/logs/sm1.png" alt="slider-thumb" />
+          <Image src={sm1} alt="slider-thumb" />
         </SwiperSlide>
         <SwiperSlide>
-          <Image src="/images/logs/sm2.png" alt="slider-thumb" />
+          <Image src={sm2} alt="slider-thumb" />
         </SwiperSlide>
         <SwiperSlide>
-          <Image src="/images/logs/sm3.png" alt="slider-thumb" />
+          <Image src={sm3} alt="slider-thumb" />
         </SwiperSlide>
         <SwiperSlide>
-          <Image src="/images/logs/sm4.png" alt="slider-thumb" />
+          <Image src={sm4} alt="slider-thumb" />
         </SwiperSlide>
         <SwiperSlide>
-          <Image src="/images/logs/sm1.png" alt="slider-thumb" />
+          <Image src={sm1} alt="slider-thumb" />
         </SwiperSlide>
         <SwiperSlide>
-          <Image src="/images/logs/sm2.png" alt="slider-thumb" />
+          <Image src={sm2} alt="slider-thumb" />
         </SwiperSlide>
         <SwiperSlide>
-          <Image src="/images/logs/sm3.png" alt="slider-thumb" />
+          <Image src={sm3} alt="slider-thumb" />
         </SwiperSlide>
         <SwiperSlide>
-          <Image src="/images/logs/sm4.png" alt="slider-thumb" />
+          <Image src={sm4} alt="slider-thumb" />
         </SwiperSlide>
       </Swiper>
     </div>
