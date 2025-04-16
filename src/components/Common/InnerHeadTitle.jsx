@@ -1,7 +1,7 @@
 import React from 'react'
 import Text from '../UI/Text'
 import { Col, Row } from 'react-bootstrap'
-import CustomBtn from '../UI/';
+import CustomBtn from '../UI/CustomBtn';
 import { useNavigate } from "react-router";
 import '../../assets/scss/components/Common/InnerHeadTitle.scss'
 
