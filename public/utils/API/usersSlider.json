@@ -1,0 +1,16 @@
+{
+    "usersSlider": [
+        {
+            "id": 1,
+            "img": "/public/images/logs/lg1.png"
+        },
+        {
+            "id": 2,
+            "img": "Avg. Time per session"
+        },
+        {
+            "id": 3,
+            "img": "Total Downloads",
+        }
+    ]
+}
