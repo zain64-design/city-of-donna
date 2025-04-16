@@ -5,7 +5,7 @@ import 'swiper/css';
 import 'swiper/css/free-mode';
 import 'swiper/css/navigation';
 import 'swiper/css/thumbs';
-import '../../assets/scss/components/ActivityLog/LogSlider.scss'
+import '../../assets/scss/components/ActivityLog/LogSlider.scss';
 import Image from '../UI/Image';
 import lg1 from '../../../public/images/logs/lg1.png';
 import lg2 from '../../../public/images/logs/lg2.png';
