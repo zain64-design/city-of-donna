@@ -6,7 +6,7 @@ import { getUserGuide } from '../../utils/redux/slice/userGuide';
 import Text from '../UI/Text'
 import { Card, Col, Row } from 'react-bootstrap'
 import '../../assets/scss/components/FeedbackSupport/UserGuideCard.scss'
-import FancyBox from '../Common/FancyBox';
+import FancyBox from '../Common/FancyBox'
 import Skeleton from 'react-loading-skeleton'
 import 'react-loading-skeleton/dist/skeleton.css'
 
