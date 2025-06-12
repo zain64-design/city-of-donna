@@ -6,12 +6,18 @@ import InnerHeadTitle from '../components/Common/InnerHeadTitle';
 const FeedbackSupport = () => {
   useAOS();
   return (
-    <div data-aos="fade-in" className='feedback-area'>
-      <div className="container-ct">
-      <InnerHeadTitle innerTitle='Feedback & Support' titleClass='mb-5' />
-        <FeedbackTabs/>
+    <>
+      <meta name="description" content="Customer feedback and support page" />
+      <meta name="keywords" content="feedback, support, customer service" />
+      <meta name="author" content="Your Company Name" />
+
+      <div data-aos="fade-in" className='feedback-area'>
+        <div className="container-ct">
+          <InnerHeadTitle innerTitle='Feedback & Support' titleClass='mb-5' />
+          <FeedbackTabs />
+        </div>
       </div>
-    </div>
+    </>
   )
 }
 
